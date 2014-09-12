@@ -2,96 +2,36 @@
   margin: 0;
   padding: 0;
 }
- 
-body { 
-  background: #0F0F0F;
+
+/*  html { 
+  background: url(background.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
 }
 
-body, html {
-  height: 100%;
+*/
+
+
+.landBox {
+    width:100%;
+    height:40px;
+    position: absolute;
+    top: 350px;
+    z-index: 1;
+
 }
 
-#right {
-  height: 100%;
-}
-.container {
-  position: relative;
-  overflow: hidden;
-  margin: 0px auto;
-  width: 100%;
-  height: 100%;
-  -webkit-box-shadow: 10px 10px 10px rgba(0,0,0,0.3);
-  box-shadow: 10px 10px 10px rgba(0,0,0,0.3);
-}
 
-.container img {
-  position: absolute;
-  max-width: 90%;
-  max-height: 100%;
-  top: 0;
-  left: 0;
-  z-index: -60;
-}
- 
-.container li img {
-  position: absolute;
-  top: 0;
-    max-width: 90%;
-  max-height: 100%;
-  left: 1700px;
-  z-index: -50;
-  -webkit-transition: all 1s ease;
-  -moz-transition: all 1s ease;
-  -o-transition: all 1s ease;
-  -ms-transition: all 1s ease;
-  transition: all 1s ease;
-  transition-duration: 1s;
-}
 
-li a:hover {
-  background: #eee;
+.landingImage {
+    width:100%;
+    height: 900px;
+    position: absolute;
+    background: url(background.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  z-index:5;
+    
 }
- 
-li a:hover + img {
-  left: 295px;
-}
-
-nav {
-  width: 295px;
-  height: 500px;
-  background: #fff;
-}
-
-nav h1 {
-  padding: 20px;
-  color: #FFFFFF;
-  text-align: center;
-  font: 30px Arvo;
-  background:#0F0F0F
-}
- 
-ul {
-  width: 800px;
-  height: 500px;
-  list-style: none;
-}
-
-li a {
-  z-index: 1;
-  display: block;
-  padding-left: 10px;
-  padding-top: 10px;
-  text-align: center;
-  width: 265px;
-  height: 50px;
-  background: white;
-  color: #444;
-  text-decoration: none;
-  font: 20px Arvo;
-  
-}
- 
-li:nth-child(1) {
- }
- 
- 
