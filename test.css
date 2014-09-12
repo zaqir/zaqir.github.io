@@ -14,5 +14,36 @@ background-repeat: no-repeat;
 background-attachment: fixed;
 }
 
-
+nav.slide-menu-bottom {
+    left: 0;
+    width: 100%;
+    height: 100px;
+}
+nav.slide-menu-bottom ul {
+    text-align: center;
+    padding: 25px 0 0 0;
+}
+nav.slide-menu-bottom li{
+    display: inline-block;
+    margin: 0;
+    vertical-align: middle;
+}
+nav.slide-menu-bottom a{
+    display: block;
+    line-height: 50px;
+    padding: 0 10px;
+    font-size: 18px;
+}
+nav.slide-menu-bottom button.close-menu{
+    display: block;
+    line-height: 50px;
+    margin: 0;
+    padding: 0 10px;
+}
+nav.slide-menu-bottom {
+    bottom: -100px
+}
+body.smb-open nav.slide-menu-bottom {
+    bottom: 0
+}
 
