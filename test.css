@@ -23,14 +23,8 @@ ul.vert{text-align: right; padding-right: 20em;list-style-type:none;display:bloc
 font:bold 16px "Josefine slab";line-height:200%;
 width:300px;}
 
-ul.vert li{margin:0;padding:0;border-top:1px solid #4D0000;
-border-bottom:1px solid #761A1A;}
+ul.vert li{text-align: right; padding-right: 20em; background-color: rgba(255,255,255,0.5); border-top:10px;
+border-bottom:10px;}
 
-ul.vert li a{display:block;text-decoration:none;color:#fff;
-background:#600;padding:0 0 0 20px;width:180px;}
-
-ul.vert li a:hover{
-background:#900 url("images/vert-one_arrow.gif") no-repeat 0 9px;}
-
-ul.vert li a.current,ul.vert-one li a.current:hover{
-background:#933 url("images/vert-one_arrow.gif") no-repeat 0 9px;}
+ul.vert li a{display:block;text-decoration:none;background-color: rgba(255,255,255,0.5);
+padding:0 0 0 20px;width:300px;}
