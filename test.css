@@ -26,5 +26,5 @@ width:300px;}
 ul.vert li{text-align: right; padding-right: 20em; background-color: rgba(255,255,255,0.1); border-top:10px;
 border-bottom:10px;}
 
-ul.vert li a{display:block;text-decoration:none;background-color: rgba(255,255,255,0.1);
+ul.vert li a{text-align: right; padding-right: 20em; display:block;text-decoration:none;background-color: rgba(255,255,255,0.1);
 padding:0 0 0 20px;width:300px;}
