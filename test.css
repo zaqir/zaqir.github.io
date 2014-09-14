@@ -23,8 +23,8 @@ ul.vert{text-align: right; padding-right: 20em;list-style-type:none;display:bloc
 font:bold 16px "Josefine slab";line-height:200%;
 width:300px;}
 
-ul.vert li{text-align: right; padding-right: 20em; background-color: rgba(255,255,255,0.5); border-top:10px;
+ul.vert li{text-align: right; padding-right: 20em; background-color: rgba(255,255,255,0.1); border-top:10px;
 border-bottom:10px;}
 
-ul.vert li a{display:block;text-decoration:none;background-color: rgba(255,255,255,0.5);
+ul.vert li a{display:block;text-decoration:none;background-color: rgba(255,255,255,0.1);
 padding:0 0 0 20px;width:300px;}
