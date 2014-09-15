@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+
+font-family: 'Abel', sans-serif;
+
+}
+
+body {
+background-image: url(coming_soon.jpg);
+
+-moz-background-size: cover;
+-webkit-background-size: cover;
+background-size: cover;
+background-position: top center;
+background-repeat: no-repeat;
+background-attachment: fixed;
+}
+
+h1 { 
+font-family: 'Abel'; 
+font-weight: bold; 
+color: #FFFFFF;
+font-size: 300%;
+text-align: center;
+
+}
