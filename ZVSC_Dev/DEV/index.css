@@ -24,7 +24,7 @@ margin-top: 2em;
 div#placeholding {
 width:100vw;
 height:100vh;
-background-image: url(coming_soon.jpg);
+background-image: url(images/coming_soon.jpg);
 -moz-background-size: cover;
 -webkit-background-size: cover;
 background-size:cover; 
@@ -32,6 +32,21 @@ background-size:cover;
   background-repeat:no-repeat; 
 background-attachment: relative;
 overflow:hidden;
+}
+
+div#bottomrun {
+position: bottom;
+width:100vw;
+height: 18vh;
+background-image: url(images/bottomrun.png);
+-moz-background-size: cover;
+-webkit-background-size: cover;
+background-size:cover; 
+  background-position:center center; 
+  background-repeat:repeat; 
+background-attachment: relative;
+overflow:hidden;
+
 }
 
 
@@ -102,7 +117,7 @@ overflow:hidden;
 div#foliolio {
 width:100vw;
 height:100vh;
-background-image: url(coming_soon5.jpg);
+background-color: white;
 font-family:Raleway-ExtraLight;
 -moz-background-size: cover;
 -webkit-background-size: cover;
