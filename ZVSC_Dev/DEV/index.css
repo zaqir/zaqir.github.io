@@ -1,0 +1,116 @@
+
+/* BODY AND FONT */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+    font-family: Raleway-ExtraLight;
+    src: url(Raleway-ExtraLight.otf);
+}
+
+header {
+
+position: fixed;
+width: 100%;
+margin-top: 2em;
+}
+		
+/*  MAIN PAGE - BULK DIV, TITLE, LINKS, NAV */
+
+
+div#placeholding {
+width:100vw;
+height:100vh;
+background-image: url(coming_soon.jpg);
+-moz-background-size: cover;
+-webkit-background-size: cover;
+background-size:cover; 
+  background-position:center center; 
+  background-repeat:no-repeat; 
+background-attachment: relative;
+overflow:hidden;
+}
+
+
+ul {
+   list-style-type: none;
+   display:inline;
+}
+li {
+   float: right;
+   border: 1px transparent ;
+   font-family:Raleway-ExtraLight;
+font-size: 150%;
+padding-left: 1em;
+padding-right: 1em;
+display:block;
+color:#9D9D9D;
+opacity: 0.5;
+border-right: 2px;
+border-color: transparent;
+}
+
+
+h1 {  
+font-family:Raleway-ExtraLight;
+color: #FFFFFF;
+text-align: center;
+font-size: 300%;
+font-weight: lighter;
+margin-top: 20%;
+
+}
+
+h2 {
+font-family:Raleway-ExtraLight;
+color: #FFFFFF;
+text-align: center;
+font-size: 200%;
+font-weight: lighter;
+}
+
+a:link {
+color:#9D9D9D;
+text-decoration: none;
+}
+
+a:visited {
+color:#9D9D9D;
+}
+
+
+
+/*  About Page styling */
+
+div#aboutness {
+width:100vw;
+height:100vh;
+background-color: white;
+font-family:Raleway-ExtraLight;
+-moz-background-size: cover;
+-webkit-background-size: cover;
+background-size:cover; 
+  background-position:center center; 
+  background-repeat:no-repeat; 
+background-attachment: relative;
+overflow:hidden;
+}
+
+div#foliolio {
+width:100vw;
+height:100vh;
+background-image: url(coming_soon5.jpg);
+font-family:Raleway-ExtraLight;
+-moz-background-size: cover;
+-webkit-background-size: cover;
+background-size:cover; 
+  background-position:center center; 
+  background-repeat:no-repeat; 
+background-attachment: relative;
+overflow:hidden;
+}
+
+/* Gallery Styling */
