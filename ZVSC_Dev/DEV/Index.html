@@ -1,65 +1,220 @@
 <!DOCTYPE html SYSTEM "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
-
 <html xmlns="http://www.w3.org/1999/xhtml">
-    <head>
-        <title>Zaqir Virani Session &amp; Creative</title>
-        <link href="index.css" rel="stylesheet" type="text/css" />             
-        <style type="text/css"></style>
-        <script src='js/scroll.js'></script>
-		<script>
-jQuery(document).ready(function($) {
- 
-	$(".scroll").click(function(event){		
-		event.preventDefault();
-		$('html,body').animate({scrollTop:$(this.hash).offset().top}, 1400);
-	});
-});
-        </script>
-    </head>
 
-    <body class="no-touch">
-	<header>
-	<ul>
-	<li><a href="#aboutness" class="scroll">About</a></li>
-	<li><a href="#foliolio" class="scroll">Folio</a></li>
-	<li><a href="#contact" class="scroll">Contact</a></li>
-	</ul>
-	</header>
-        <div id="placeholding">      		      
-			<h1>Zaqir Virani</h1>
-			<br/>
-			<h2>Session &amp; Creative Services</h2>
-			<br/>
-			<br/>
-            
-        </div>
+<head>
+    <title>Zaqir Virani Session &amp; Creative</title>
+	<meta name="description" content="The digital portfolio of Zaqir Virani - creative consultant, author, and session musician."/>
+
+<!--  Facebook Opengraph Meta Tags  -->
+	<meta property="og:type" content="website"/>
+	<meta property="og:image" content="images/opengraph_snip.png"/>
+	<meta property="og:url" content="http://www.zaqirvirani.com"/>
+<!--  Twitter Card Meta Tags   -->
+     	<meta name="twitter:card" content=""/>
+		<meta name="twitter:url" content=""/>
+		<meta name="twitter:title" content=""/>
+		<meta name="twitter:description" content=""/>
+		<meta name="twitter:image" content=""/>
 		
-    <div id="foliolio">
-	<div id="myspecialdiv" style="width=100vw; height: 100vh;" >
-    <iframe width="100%" height="90%" frameborder="0" src="indedx.html"></iframe>
-</div>
+		
+    <link href="index.css" rel="stylesheet" type="text/css" />
+    <style type="text/css"></style>
+    <script src='js/scroll.js'></script>
+	<script src="js/classie.js"></script>
+<script>
+    function init() {
+        window.addEventListener('scroll', function(e){
+            var distanceY = window.pageYOffset || document.documentElement.scrollTop,
+                shrinkOn = 300,
+                header = document.querySelector("header");
+            if (distanceY > shrinkOn) {
+                classie.add(header,"smaller");
+            } else {
+                if (classie.has(header,"smaller")) {
+                    classie.remove(header,"smaller");
+                }
+            }
+        });
+    }
+    window.onload = init();
+</script>
+    <script>
+        jQuery(document).ready(function($) {
 
+            $(".scroll").click(function(event) {
+                event.preventDefault();
+                $('html,body').animate({
+                    scrollTop: $(this.hash).offset().top
+                }, 1400);
+            });
+        });
+    </script>
+</head>
+
+<body class="no-touch">
+<header>
+    <div class="container clearfix">
+        <h1 id="logo">
+        </h1>
+        <nav>
+ <ul id="nav">
+            <li id="nav"><a href="#aboutness" class="scroll">About</a>
+            </li>
+			<li id="nav"><a href="#placeholding" class="scroll">Home</a>
+            </li>
+            <li id="nav"><a href="#folio" class="scroll">Portfolio</a>
+            </li>
+            <li id="nav"><a href="#contact" class="scroll">Contact</a>
+            </li>
+        </ul>
+        </nav>
+    </div>
+</header>		
+    <div id="placeholding">
+        <h1>Zaqir Virani</h1>
+        <br/>
+        <h2>Session &amp; Creative Services</h2>
     </div>
 
 
-</div>
+	  <div id="folio">
+	  <h3>Creative Portfolio</h3>
+        <ul class="grid cs-style-4">
+            <li>
+                <figure>
+                    <img src="images/ground.png" alt="img01">
+                    <figcaption>
+                        <h4>Film Score</h3>
+                        <span>'From the Ground Up' <br/> Documentary film <br/></span>
+                        <a href="http://dribbble.com/shots/1115632-Camera">Take a look</a>
+                    </figcaption>
+                </figure>
+            </li>
+            <li>
+                <figure>
+                    <img src="images/fans_snip.png" alt="img01">
+                    <figcaption>
+                        <h4>Genre</h3>
+                        <span>Title and Category</span>
+                        <a href="http://dribbble.com/shots/1115632-Camera">Link to actual</a>
+                    </figcaption>
+                </figure>
+            </li>
+            <li>
+                <figure>
+                    <img src="images/rem.png" alt="img01">
+                    <figcaption>
+                        <h4>Camera</h3>
+                        <span>Jacob Cummings</span>
+                        <a href="http://dribbble.com/shots/1115632-Camera">Take a look</a>
+                    </figcaption>
+                </figure>
+            </li>
+            <li>
+                <figure>
+                    <img src="images/trouve.png" alt="img01">
+                    <figcaption>
+                        <h4>Camera</h3>
+                        <span>Jacob Cummings</span>
+                        <a href="http://dribbble.com/shots/1115632-Camera">Take a look</a>
+                    </figcaption>
+                </figure>
+            </li>
+            <li>
+                <figure>
+                    <img src="images/ctv.png" alt="img01">
+                    <figcaption>
+                        <h4>Camera</h3>
+                        <span>Jacob Cummings</span>
+                        <a href="http://dribbble.com/shots/1115632-Camera">Take a look</a>
+                    </figcaption>
+                </figure>
+            </li>
+            <li>
+                <figure>
+                    <img src="images/triumphs.png" alt="img01">
+                    <figcaption>
+                        <h4>Camera</h3>
+                        <span>Jacob Cummings</span>
+                        <a href="http://dribbble.com/shots/1115632-Camera">Take a look</a>
+                    </figcaption>
+                </figure>
+            </li>
+            <li>
+                <figure>
+                    <img src="images/dummy6.jpg" alt="img01">
+                    <figcaption>
+                        <h4>Camera</h3>
+                        <span>Jacob Cummings</span>
+                        <a href="http://dribbble.com/shots/1115632-Camera">Take a look</a>
+                    </figcaption>
+                </figure>
+            </li>
+              <li>
+                <figure>
+                    <img src="images/dummy1.jpg" alt="img01">
+                    <figcaption>
+                        <h4>Camera</h3>
+                        <span>Jacob Cummings</span>
+                        <a href="http://dribbble.com/shots/1115632-Camera">Take a look</a>
+                    </figcaption>
+                </figure>
+            </li>
+            <li>
+                <figure>
+                    <img src="images/dummy2.jpg" alt="img01">
+                    <figcaption>
+                        <h4>Camera</h3>
+                        <span>Jacob Cummings</span>
+                        <a href="http://dribbble.com/shots/1115632-Camera">Take a look</a>
+                    </figcaption>
+                </figure>
+            </li>
+            <li>
+                <figure>
+                    <img src="images/dummy3.jpg" alt="img01">
+                    <figcaption>
+                        <h4>Camera</h3>
+                        <span>Jacob Cummings</span>
+                        <a href="http://dribbble.com/shots/1115632-Camera">Take a look</a>
+                    </figcaption>
+                </figure>
+            </li>
+            <li>
+                <figure>
+                    <img src="images/dummy4.jpg" alt="img01">
+                    <figcaption>
+                        <h4>Camera</h3>
+                        <span>Jacob Cummings</span>
+                        <a href="http://dribbble.com/shots/1115632-Camera">Take a look</a>
+                    </figcaption>
+                </figure>
+            </li>
+            <li>
+                <figure>
+                    <img src="images/dummy5.jpg" alt="img01">
+                    <figcaption>
+                        <h4>Camera</h3>
+                        <span>Jacob Cummings</span>
+                        <a href="http://dribbble.com/shots/1115632-Camera">Take a look</a>
+                    </figcaption>
+                </figure>
+            </li>
 
-<div id="aboutness">
-		    <div id="clay">
-		<br/>
-		<br/>
-		        <h3 style="font-size: 200%; text-align: center; width: 100%; color: #333333;">Zaqir Virani</h3>
-				<br/>
+        </ul>
 
-		    </div>
-			<div id="day" style="background-color: #858585; width: 100%; text-align: center; display: inline-block;">
-						<img src="images/instagram.png" style="max-width: 10%; max-height: 10%;"/>
-						<img src="images/linkedin.png" style="max-width: 10%; max-height: 10%;"/>
-						<img src="images/soundcloud.png" style="max-width: 10%; max-height: 10%;"/>
-						<img src="images/twitter.png" style="max-width: 10%; max-height: 10%;"/>
-			</div>			
-		</div>
-        
-       </body>
+
+    </div>
+	    <div id="aboutness">
+            <br/>
+            <br/>
+            <h3>Zaqir Virani</h3>
+						 <div id="aboutcontent">
+						 			<img style="max-height: 80vh" src="images/about.jpg"/>
+						 <p class="aboutcontent">Ipsum Swayze Lorem Dirty Dancing. Ipsum Swayze Lorem Dirty Dancing. Ipsum Swayze Lorem Dirty Dancing. Ipsum Swayze Lorem Dirty Dancing. Ipsum Swayze Lorem Dirty Dancing. Ipsum Swayze Lorem Dirty Dancing. Ipsum Swayze Lorem Dirty Dancing. Ipsum Swayze Lorem Dirty Dancing. Ipsum Swayze Lorem Dirty Dancing. Ipsum Swayze Lorem Dirty Dancing. Ipsum Swayze Lorem Dirty Dancing. Ipsum Swayze Lorem Dirty Dancing. Ipsum Swayze Lorem Dirty Dancing. Ipsum Swayze Lorem Dirty Dancing. Ipsum Swayze Lorem Dirty Dancing. Ipsum Swayze Lorem Dirty Dancing. Ipsum Swayze Lorem Dirty Dancing. Ipsum Swayze Lorem Dirty Dancing. Ipsum Swayze Lorem Dirty Dancing. Ipsum Swayze Lorem Dirty Dancing. Ipsum Swayze Lorem Dirty Dancing. Ipsum Swayze Lorem Dirty Dancing. Ipsum Swayze Lorem Dirty Dancing. Ipsum Swayze Lorem Dirty Dancing. Ipsum Swayze Lorem Dirty Dancing. Ipsum Swayze Lorem Dirty Dancing. Ipsum Swayze Lorem Dirty Dancing. Ipsum Swayze Lorem Dirty Dancing. Ipsum Swayze Lorem Dirty Dancing. Ipsum Swayze Lorem Dirty Dancing. Ipsum Swayze Lorem Dirty Dancing. Ipsum Swayze Lorem Dirty Dancing. Ipsum Swayze Lorem Dirty Dancing. Ipsum Swayze Lorem Dirty Dancing. Ipsum Swayze Lorem Dirty Dancing. Ipsum Swayze Lorem Dirty Dancing. Ipsum Swayze Lorem Dirty Dancing. Ipsum Swayze Lorem Dirty Dancing. Ipsum Swayze Lorem Dirty Dancing. </p>
+             </div>
+      </div> 
+</body>
+
 </html>
