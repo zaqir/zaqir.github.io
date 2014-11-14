@@ -18,11 +18,27 @@ Written by Zaqir Virani
     src: url(fonts/Raleway-ExtraLight.otf);
 }
 
-/* Scroll HEADER   --------------------------------------------------------------------------------------------------------------------------------SCROLLING RESIZEABLE HEADER NAV */
+html {
+height: 100vh;
+width: 100vw;
+background: url(images/coming_soon.jpg) no-repeat center center fixed; 
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+overflow-x:hidden;
+ 
+}
+
+
+/* Scroll HEADER   -----------------------------------------------------------------------------------------------------------SCROLLING RESIZEABLE NAV */
+
+
+
 
 header {
     width: 100vw;
-    height: 60vh;
+    height: 20vh;
     overflow: hidden;
     position: fixed;
     top: 0;
@@ -95,30 +111,31 @@ header nav a:hover {
     color: white;
 }
 header.smaller {
-    height: 10vh;
+    height: 8vh;
+	background:rgba(0,0,0,0.8);
+	
 }
 header.smaller h1#logo {
     width: 50vw;
-    height: 10vh;
-    line-height: 10vh;
-    font-size: 100%;
+    height: 8vh;
+    line-height: 8vh;
+    font-size: 1.5vw;
 }
 header.smaller nav a {
-    line-height: 75px;
+    line-height: 8vh;
 	font-weight: lighter;
-	font-size: 80%;
-	color: #FFFFFF;
+	font-size: 1.5vw;
+	color: #B2B2B2;
 
 }
 
 header.smaller nav a:hover {
    color:#FFFFFF;
    opacity: none;
-   background-color: #595959;
 
 }
 
-@media all and (max-width: 660px) {
+@media all and (max-width: 60px) {
     header h1#logo {
         display: block;
         float: none;
@@ -155,13 +172,12 @@ header.smaller nav a:hover {
 }
 
 		
-/*  MAIN PAGE - BULK DIV, TITLE, LINKS, NAV   -------------------------------------------------------------------------------------------------------LANDING PAGE STYLING  */
+/*  MAIN PAGE - BULK DIV, TITLE, LINKS, NAV   --------------------------------------------------------------------------------LANDING PAGE STYLING  */
 
 
 div#placeholding {
 width:100vw;
 height:100vh;
-background-image: url(images/coming_soon.jpg);
 -moz-background-size: cover;
 -webkit-background-size: cover;
 background-size:cover; 
@@ -196,56 +212,98 @@ text-decoration: none;
 }
 
 a:visited {
-color:#474747;
+color:#FFFFFF;
 }
 
-/* Folio   -----------------------------------------------------------------------------------------------------------------------------------------------------------------DYNAMIC PORTFOLIO GALLERY  */
+/* Folio   ----------------------------------------------------------------------------------------------------------------------DYNAMIC PORTFOLIO GALLERY  */
 
 div# folio {
-     background-color: #595959;
+     background-color: #FFFFFF;
+	 width: 100%;
 
 }
 
-h3 {
-     text-align: center;
+p.banner {
 	 font-family: Raleway-ExtraLight;
 	 font-weight: lighter;
-	 color: #FFFFFF;
-	 font-size: 200%;
-	 padding-bottom: 0.5em;
-	 padding-top: 1em;
-     background-color: #595959;
-	 
+	 color: #323232;
+	 font-size: 2vw;
+	 position: contain;
+	 background-color: #FFFFFF;
+	 text-align: center;
 }	 
 
-/* image captions */
+
 .grid {
-    padding: 0;
     width: 100vw;
-    margin: 0;
     list-style: none;
     text-align: center;
-	background-color: #DFDFDF;
+	background-color: #FFFFFF;
+	margin-left: 0;
+	margin-right: 0;
 }
- 
-.grid li {
+
+.grid li#ground {
     display: inline-block;
-    width: 30vw;
+    width: 65.8vw;
     margin: 0;
-    padding: 0;
+    padding: 0vw;
     text-align: left;
     position: relative;
+	overflow: hidden;
+}
+
+.grid li#fans {
+    display: inline-block;
+    width: 32.9vw;
+    margin: 0;
+    padding: 0vw;
+    text-align: left;
+    position: relative;
+	overflow: hidden;
+}
+
+.grid li#firststory {
+    display: inline-block;
+    width: 49.35vw;
+    margin: 0;
+    padding: 0vw;
+    text-align: left;
+    position: relative;
+	overflow: hidden;
+}
+
+.grid li#rem {
+    display: inline-block;
+    width: 49.35vw;
+    margin: 0;
+    padding: 0vw;
+    text-align: left;
+    position: relative;
+	overflow: hidden;
+}
+ 
+.grid li#dummy {
+    display: inline-block;
+    width: 32.9vw;
+    margin: 0;
+    padding: 0vw;
+    text-align: left;
+    position: relative;
+	overflow: hidden;
 }
 
 .grid figure {
     margin: 0;
     position: relative;
+	overflow: hidden;
 }
 
 .grid figure img {
     max-width: 100%;
     display: block;
     position: relative;
+	overflow: hidden;
 }
 
 .grid figcaption {
@@ -255,21 +313,21 @@ h3 {
     top: 0;
     left: 0;
     padding: 2px;
-    background: #2c3f52;
-    color: #ffffff;
+	background:rgba(0,0,0,0.8);
+
 }
 
 .grid figcaption h4 {
     margin: 0;
-    padding: 0;
-	 font-family: Raleway-ExtraLight;
 	 font-weight: lighter;
-	 font-size: 110%;
+    padding-bottom: 1em;
+	 font-family: Raleway-ExtraLight;
     color: #fff;
+	
 }
  
 .grid figcaption span:before {
-    content: ' ';
+    color: #FFFFFF;
 }
  
 .grid figcaption a {
@@ -281,11 +339,12 @@ h3 {
     display: inline-block;
     background: #339933;
     color: #fff;
+
 }
 
-@media screen and (max-width: 11.5em) {
+@media screen and (max-width: 0em) {
     .grid {
-        padding: 10px 10px 100px 10px;
+        padding: 0;
     }
     .grid li {
         width: 100%;
@@ -307,29 +366,46 @@ h3 {
 }
 
 .cs-style-4 figure img {
-    transition: transform 0.4s;
+    transition: transform 1s;
+
 }
  
 .no-touch .cs-style-4 figure:hover img,
 .cs-style-4 figure.cs-hover img {
-    transform: translateX(25%);
+/* Webkit for Chrome and Safari */
+  -webkit-transform: scale(1.2, 1.2); // This is the enlarged size scale of the image.
+  -webkit-transition-duration: 1800ms;
+  -webkit-transition-timing-function: ease-out;
+ 
+  /* Webkit for Mozila Firefox */
+  -moz-transform: scale(1.2, 1.2);
+  -moz-transition-duration: 1800ms;
+  -moz-transition-timing-function: ease-out;
+ 
+  /* Webkit for IE( Version: 11, 10 ) */
+  -ms-transform: scale(1.20, 1.20);
+  -ms-transition-duration: 1800ms;
+  -ms-transition-timing-function: ease-out;
+
 }
 
 .cs-style-4 figcaption {
     height: 100%;
     width: 50%;
     opacity: 0;
+	color: #FFFFFF;
+	font-weight: lighter;
     backface-visibility: hidden;
     transform-origin: 0 0;
     transform: rotateY(-90deg);
-    transition: transform 0.4s, opacity 0.1s 0.3s;
+    transition: transform 0.7s, opacity 0.1s 0.3s;
 }
 
 .no-touch .cs-style-4 figure:hover figcaption,
 .cs-style-4 figure.cs-hover figcaption {
     opacity: 1;
     transform: rotateY(0deg);
-    transition: transform 0.4s, opacity 0.1s;
+    transition: transform 0.7s, opacity 0.1s;
 }
 
 .cs-style-4 figcaption a {
@@ -339,11 +415,11 @@ h3 {
 }
 
 
-/*  About Page styling   --------------------------------------------------------------------------------------------------------------------------------ABOUT PAGE STYLING  */
+/*  About Page styling   -------------------------------------------------------------------------------------------------------------------------ABOUT PAGE STYLING  */
 
 div#aboutness {
 width:100vw;
-background-color: #474747;
+background-color: #FFFFFF;
 -moz-background-size: cover;
 -webkit-background-size: cover;
 background-size:cover; 
@@ -357,7 +433,8 @@ h3 {
    font-size: 200%; 
    text-align: center; 
    width: 100%; 
-   color: #333333
+   background-color: #FFFFFF;
+    font-color: #333333;
 
 }
 
@@ -373,9 +450,28 @@ p.aboutcontent {
     padding-top: 4em;
     padding-right: 4em;
     width: 50%;
-    color: white;
+    color: #333333;
 	float: right;
 	display: inline;
 	font-family:Raleway-ExtraLight;
 
+}
+
+/* Footer ----------------------------------------------------------------------------------------------------------------------------------------------- Footer */
+
+div#footer {
+
+height:40vh;
+width: 100vw;
+background-color: #474747;
+position: absolute;
+z-index: 1;
+
+}
+
+h5 {
+color: #FFFFFF;
+font-family: Raleway-ExtraLight;
+font-weight: lighter;
+text-align: center;
 }
