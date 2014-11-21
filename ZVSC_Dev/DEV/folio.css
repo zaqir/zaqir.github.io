@@ -1,0 +1,211 @@
+/* Folio   ----------------------------------------------------------------------------------------------------------------------DYNAMIC PORTFOLIO GALLERY  */
+
+div# folio {
+     background-color: #FFFFFF;
+	 width: 100vw;
+
+
+}
+
+p.banner {
+	 font-family: Raleway-ExtraLight;
+	 font-weight: lighter;
+	 color: #323232;
+	 font-size: 2vw;
+	 position: contain;
+	 background-color: #FFFFFF;
+	 opacity: 0.9;
+	 text-align: center;
+}	 
+
+h6 {
+
+     font-family: Raleway-ExtraLight;
+	 font-weight: lighter;
+	 color: #323232;
+	 font-size: 2vw;
+	 padding-top: 1em;
+	 padding-bottom: 1em;
+	 opacity: 0.9;
+	 background-color: #FFFFFF;
+}
+
+.grid {
+    width: 100vw;
+    list-style: none;
+    text-align: center;
+	background-color: #FFFFFF;
+	margin-left: 0;
+	margin-right: 0;
+}
+
+.grid li#ground {
+    display: inline-block;
+    width: 65.5vw;
+    margin: 0;
+    padding: 0vw;
+    text-align: left;
+    position: relative;
+	overflow: hidden;
+}
+
+.grid li#fans {
+    display: inline-block;
+    width: 32.5vw;
+    margin: 0;
+    padding: 0vw;
+    text-align: left;
+    position: relative;
+	overflow: hidden;
+}
+
+.grid li#firststory {
+    display: inline-block;
+    width: 48.8vw;
+    margin: 0;
+    padding: 0vw;
+    text-align: left;
+    position: relative;
+	overflow: hidden;
+}
+
+.grid li#rem {
+    display: inline-block;
+    width: 48.8vw;
+    margin: 0;
+    padding: 0vw;
+    text-align: left;
+    position: relative;
+	overflow: hidden;
+}
+ 
+.grid li#dummy {
+    display: inline-block;
+    width: 32.9vw;
+    margin: 0;
+    padding: 0vw;
+    text-align: left;
+    position: relative;
+	overflow: hidden;
+}
+
+.grid figure {
+    margin: 0;
+    position: relative;
+	overflow: hidden;
+}
+
+.grid figure img {
+    max-width: 100%;
+    display: block;
+    position: relative;
+	overflow: hidden;
+}
+
+.grid figcaption {
+    position: absolute;
+	 font-family: Raleway-ExtraLight;
+	 font-weight: lighter;
+    top: 0;
+    left: 0;
+    padding: 2px;
+	background:rgba(0,0,0,0.8);
+
+}
+
+.grid figcaption h4 {
+    margin: 0;
+	 font-weight: lighter;
+    padding-bottom: 1em;
+	 font-family: Raleway-ExtraLight;
+    color: #fff;
+	
+}
+ 
+.grid figcaption span:before {
+    color: #FFFFFF;
+}
+ 
+.grid figcaption a {
+    text-align: center;
+	 font-family: Raleway-ExtraLight;
+	 font-weight: lighter;
+    padding: 5px 10px;
+    border-radius: 2px;
+    display: inline-block;
+    background: #339933;
+    color: #fff;
+
+}
+
+@media screen and (max-width: 0em) {
+    .grid {
+        padding: 0;
+    }
+    .grid li {
+        width: 100%;
+        min-width: 100px;
+    }
+}
+
+.cs-style-4 li {
+    perspective: 1700px;
+    perspective-origin: 0 50%;
+}
+
+.cs-style-4 figure {
+    transform-style: preserve-3d;
+}
+
+.cs-style-4 figure > div {
+    overflow: hidden;
+}
+
+.cs-style-4 figure img {
+    transition: transform 1s;
+
+}
+ 
+.no-touch .cs-style-4 figure:hover img,
+.cs-style-4 figure.cs-hover img {
+/* Webkit for Chrome and Safari */
+  -webkit-transform: scale(1.2, 1.2); // This is the enlarged size scale of the image.
+  -webkit-transition-duration: 1800ms;
+  -webkit-transition-timing-function: ease-out;
+ 
+  /* Webkit for Mozila Firefox */
+  -moz-transform: scale(1.2, 1.2);
+  -moz-transition-duration: 1800ms;
+  -moz-transition-timing-function: ease-out;
+ 
+  /* Webkit for IE( Version: 11, 10 ) */
+  -ms-transform: scale(1.20, 1.20);
+  -ms-transition-duration: 1800ms;
+  -ms-transition-timing-function: ease-out;
+
+}
+
+.cs-style-4 figcaption {
+    height: 100%;
+    width: 50%;
+    opacity: 0;
+	color: #FFFFFF;
+	font-weight: lighter;
+    backface-visibility: hidden;
+    transform-origin: 0 0;
+    transform: rotateY(-90deg);
+    transition: transform 0.7s, opacity 0.1s 0.3s;
+}
+
+.no-touch .cs-style-4 figure:hover figcaption,
+.cs-style-4 figure.cs-hover figcaption {
+    opacity: 1;
+    transform: rotateY(0deg);
+    transition: transform 0.7s, opacity 0.1s;
+}
+
+.cs-style-4 figcaption a {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
