@@ -191,6 +191,15 @@ padding-right: 1em;
 opacity: 0.5;
 
 }
+
+img.landingbuttons:hover {
+
+width: 3vw;
+float: right;
+padding-right: 1em;
+opacity: 0.9;
+
+}
 img#yo {
 -webkit-filter: grayscale(0%);
 -moz-filter: grayscale(0%);
@@ -209,7 +218,7 @@ filter: grayscale(100%);
 div#navbar {
 
 width:100vw;
-height:25vh;
+height:35vh;
 background-color: #FFFFFF;
 -moz-background-size: cover;
 -webkit-background-size: cover;
@@ -238,7 +247,7 @@ color: black;
 
 div#tagline {
 width:100vw;
-background-color: #006633;
+background-color: #006600;
 -moz-background-size: cover;
 -webkit-background-size: cover;
 background-size:cover; 
@@ -252,7 +261,7 @@ opacity: 0.8;
 
 div#tagline p {
 
-width: 100vw;
+width: 80vw;
 font-size: 120%;
 padding-left: 2em;
 padding-right: 2em;
