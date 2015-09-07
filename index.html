@@ -1,61 +1,312 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Zaqir Virani Session &amp; Creative</title>
+    <meta content=
+    "The digital portfolio of Zaqir Virani - creative consultant, author, and session musician."
+    name="description">
+	<!--  Facebook Opengraph Meta Tags  -->
+    <meta content="website">
+    <meta content="images/opengraph_snip.png">
+    <meta content="http://www.zaqirvirani.com">
+    <!--  Twitter Card Meta Tags   -->
+    <meta content="" name="twitter:card">
+    <meta content="" name="twitter:url">
+    <meta content="" name="twitter:title">
+    <meta content="" name="twitter:description">
+    <meta content="" name="twitter:image">
+    <link href="test.css" rel="stylesheet" type="text/css">
+	<link rel="shortcut icon" href="favicon.ico">
+    <style type="text/css"></style>
+    <script src='js/scroll.js'></script>
+    <script src="js/classie.js"></script>
+    <script>
+function init() {
+        window.addEventListener('scroll', function(e){
+            var distanceY = window.pageYOffset || document.documentElement.scrollTop,
+                shrinkOn = 300,
+                header = document.querySelector("header");
+            if (distanceY > shrinkOn) {
+                classie.add(header,"smaller");
+            } else {
+                if (classie.has(header,"smaller")) {
+                    classie.remove(header,"smaller");
+                }
+            }
+        });
+    }
+    window.onload = init();
+    </script>
+    <script>
+    jQuery(document).ready(function($) {
 
-<!DOCTYPE html SYSTEM "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-
-
-<html xmlns="http://www.w3.org/1999/xhtml">
-    <head>
-        <title>ZVSC</title>
-        <link href="coming_soon.css" rel="stylesheet" type="text/css" />
-        <link rel="shortcut icon" href="favicon.ico" />
-        <link rel="shortcut icon" href="favicon.ico" type="image/vnd.microsoft.icon" target="_top"/>
-        <link rel="icon" href="favicon.ico" type="image/vnd.microsoft.icon" target="_top"/>                
-        <style type="text/css">
-
-        </style>
+            $(".scroll").click(function(event) {
+                event.preventDefault();
+                $('html,body').animate({
+                    scrollTop: $(this.hash).offset().top
+                }, 1400);
+            });
+        });
+    </script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
 <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+$(window).load(function() {
+		// Animate loader off screen
+		$(".se-pre-con").fadeOut("slow");;
+	});
+	</script>
+	    <link rel="stylesheet" type="text/css" href="css/demo.css" />
+	<link rel="stylesheet" type="text/css" href="css/elastic_grid.min.css" />
+</head>
 
-  ga('create', 'UA-55886286-1', 'auto');
-  ga('send', 'pageview');
+<body class="no-touch">
+<div class="se-pre-con"></div>
 
+    <div id="placeholding">
+        <h1>Zaqir Virani</h1><br>
+
+        <!--<h2>Session &amp; Creative Services</h2>-->
+
+        <div id="buttonrow">
+            <a href="http://twitter.com/zaqirvirani" target="_blank"><img class="landingbuttons" src="images/buttons/twitter.png"></a> 
+			<a href="http://instagram.com/zaqirvirani" target="_blank"><img class="landingbuttons" src= "images/buttons/instagram.png"></a> 
+			<a href="https://ca.linkedin.com/in/zaqirvirani" target="_blank"><img class="landingbuttons" src="images/buttons/linkedin.png"></a> 
+			<a href="https://soundcloud.com/zaqir-virani" target="_blank"><img class="landingbuttons" src="images/buttons/soundcloud.png"></a>
+        </div>
+    </div>
+
+    <div id="navbar">
+        <p>words, music, and code.</p><a class="scroll" href=
+        "#space"><img src="images/buttons/downarrow.png" style=
+        "height: 6vw; padding-top: 1vw;"></a>
+    </div>
+	<div id="space" style="height: 100px; width: 100%; color: #ffffff;"></div>
+<div id="elastic_grid_demo"></div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="js/modernizr.custom.js"></script>
+<script src="js/classie.js"></script>
+<!--- uncompress-->
+<!-- <script type="text/javascript" src="js/jquery.elastislide.js"></script>
+<script type="text/javascript" src="js/jquery.hoverdir.js"></script>-->
+<script type="text/javascript" src="js/elastic_grid.js"></script>
+
+<!-- compress version-->
+<script type="text/javascript" src="js/elastic_grid.min.js"></script>
+
+<script type="text/javascript">
+    $(function(){
+        $("#elastic_grid_demo").elastic_grid({
+            'showAllText' : 'All',
+            'filterEffect': 'popup', // moveup, scaleup, fallperspective, fly, flip, helix , popup
+            'hoverDirection': true,
+            'hoverDelay': 0,
+            'hoverInverse': false,
+            'expandingSpeed': 800,
+            'expandingHeight': 800,
+            'items' :
+            [
+                {
+                    'title'         : 'Resonator Magazine',
+                    'description'   : 'Currently being built - At the moment, I serve the roles of co-designer and editor, shared with the rest of our team. Resonator Magazine is a startup digital publication that showcases independent artists, music history and theory, and DIY gear. The current project involves standard and mobile platforms for content distribution, as well as cross-compatibility with aspects of digital music staples Spotify and Last FM. Currently, visiting the linked address will display an introductory page.',
+					<!-- the first thumbnail shows in the gallery, the next four also run as a slider in the expanded view -->
+                    'thumbnail'     : ['images/small/resonator3.jpg', 'images/small/resonator.jpg'],
+                    'large'         : ['images/large/resonator3.jpg', 'images/large/resonator.jpg'],
+                    'button_list'   :
+                    [
+                        { 'title':'Resonator Homepage', 'url' : 'http://resonatormagazine.com/', 'new_window' : true }
+                    ],
+                    'tags'          : ['Web Design', 'Publications', 'Documentation']
+                },
+                {
+                    'title'         : 'Resonator Internal Documentation',
+                    'description'   : 'The Resonator FAQ is a hosted page I designed and maintain for team members of Resonator Magazine. This documentation site encompasses the processes required of contributors ranging from authors and photographers to desiners and advertisers. The content covers use of GitHub, the CMS, and the editorial and style guide points. The FAQ is hosted with GitHub Pages. Follow the link to see a sample.',
+                    'thumbnail'     : ['images/small/resonator_faq.jpg',],
+                    'large'         : ['images/large/FAQ.jpg',],
+                    'button_list'   :
+                    [
+                        { 'title':'FAQ Sample', 'url' : 'http://resonatormagazine.github.io/ContributorFAQ/', 'new_window' : true },
+                    ],
+                    'tags'          : ['Web Design', 'Documentation', 'Publications']
+                },
+                {
+                    'title'         : 'Kits for Cultural History:<br/>Electric Jewels',
+                    'description'   : 'During 2013-14, I participated in developing the Electric Jewels kit as a member of the Maker Lab. The Electric Jewels kit is designed to be a mass-produced educational tool for the tactile learning of fundamental circuitry and the history of electronics. As the Electrics Lead, my role was primarily to research and design the circuitry components to recreate and document the antique electronics discussed in the kits. Follow the link to an explanation on the Maker Lab homepage.',
+                    'thumbnail'     : ['images/small/arduino.jpg', 'images/small/jewels.jpg'],
+                    'large'         : ['images/large/arduino.jpg', 'images/large/schem1.jpg'],
+                    'button_list'   :
+                    [
+                        { 'title':'Maker Lab - Electric Jewels', 'url' : 'http://maker.uvic.ca/kch/', 'new_window' : true },
+                    ],
+                    'tags'          : ['Research', 'Material Design']
+                },
+                {
+                    'title'         : 'Kits for Cultural History:<br/>The Wire Recorder Kit',
+                    'description'   : 'During 2013-14, I participated in developing the Wire Recorder kit as a member of the Maker Lab. The Wire Recorder kit is designed to be a mass-produced educational tool for the tactile learning of magnetic recording and the history of audio production. Follow the link to an explanation on the Maker Lab homepage.',
+                    'thumbnail'     : ['images/small/ferrite.jpg', 'images/small/ferrite2.jpg'],
+                    'large'         : ['images/large/ferrite.jpg', 'images/large/ferrite2.jpg'],
+                    'button_list'   :
+                    [
+                        { 'title':'Maker Lab - Wire Recorder', 'url' : 'http://maker.uvic.ca/kch/', 'new_window' : true },
+                    ],
+                    'tags'          : ['Research', 'Material Design']
+                },
+               {
+                    'title'         : '"Cultural or Technological Determinism?"',
+                    'description'   : 'As a researcher and developer on the Kits team for the Maker Lab, I wrote this article to discuss the ramifications of employing modern materials to craft antique devices, in an educational contest. Follow the link to a copy of the article.',
+                    'thumbnail'     : ['images/small/kits.jpg'],
+                    'large'         : ['images/large/trouve.jpg',],
+                    'button_list'   : 
+                    [
+                        { 'title':'Article', 'url' : 'http://maker.uvic.ca/determinism/', 'new_window' : true },
+                    ],
+                    'tags'          : ['Publications', 'Material Design']
+                },
+                {
+                    'title'         : 'The Geospatial Illiad',
+                    'description'   : 'As part of the Myths on Maps research initiative in the Humanities Computing and Media Centre, I helped edit and embed GIS coordinates into an interactive edition of the Illiad, allowing users to explore geospatial concept mapping of characters, settings, and themes. The project is ongoing, and a low-grade development version is available for public use through the link below.',
+                    'thumbnail'     : ['images/small/greece.jpg'],
+                    'large'         : ['images/large/greece.jpg'],
+                    'button_list'   :
+                    [
+                        { 'title':'Demo', 'url' : 'http://myths.uvic.ca/map.xql', 'new_window' : true },
+                    ],
+                    'tags'          : ['Web Design', 'Research', 'Publications']
+                },
+               {
+                    'title'         : '"From the Ground Up"',
+                    'description'   : 'In the spring of 2014, I scored this documentary film by Kim Jay. Funded by The Saskatchewan Arts Board, Odlum Brown Investing, and The Sam Project, Kim spent time in Zambia covering a family and their life and coping with seasonal drought. With the exception of the intro and outro credits songs, the entirety of the film is scored by me on acoustic steel-string guitar. The finished cut is now in the hands of The Sam Project, but a development version is available for viewing on Vimeo, accesible through the following link.',
+                    'thumbnail'     : ['images/small/ground.jpg','images/small/ground1.jpg'],
+                    'large'         : ['images/large/ground.jpg','images/large/ground1.jpg'],
+                    'button_list'   :
+                    [
+                        { 'title':'Watch the FIlm', 'url' : 'https://vimeo.com/105999236', 'new_window' : true },
+                    ],
+                    'tags'          : ['Compositions']
+                },
+               /* {
+                    'title'         : 'TAG Cover Page',
+                    'description'   : 'Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot.Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage.',
+                    'thumbnail'     : ['images/small/troy.jpg', 'images/small/13.jpg', 'images/small/14.jpg', 'images/small/15.jpg', 'images/small/16.jpg'],
+                    'large'         : ['images/large/16.jpg', 'images/large/13.jpg', 'images/large/14.jpg', 'images/large/15.jpg', 'images/large/16.jpg'],
+                    'button_list'   :
+                    [
+                        { 'title':'Demo', 'url' : 'http://porfolio.bonchen.net/', 'new_window' : true },
+                        { 'title':'Download', 'url':'http://porfolio.bonchen.net/', 'new_window' : true}
+                    ],
+                    'tags'          : ['Web Design']
+                },
+                {
+                    'title'         : 'Routledge Encyclopedia of Modernism',
+                    'description'   : 'Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot.Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage.',
+                    'thumbnail'     : ['images/small/rem.jpg', 'images/small/18.jpg', 'images/small/19.jpg', 'images/small/20.jpg'],
+                    'large'         : ['images/large/18.jpg', 'images/large/18.jpg', 'images/large/19.jpg', 'images/large/20.jpg'],
+                    'button_list'   :
+                    [
+                        { 'title':'Demo', 'url' : 'http://porfolio.bonchen.net/', 'new_window' : true },
+                        { 'title':'Download', 'url':'http://porfolio.bonchen.net/', 'new_window' : true}
+                    ],
+                    'tags'          : ['Publications',]
+                },
+                {
+                    'title'         : 'MonsterCat Campaign:<br/>Robots',
+                    'description'   : 'Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot.Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage.',
+                    'thumbnail'     : ['images/small/monstercat.jpg','images/small/15.jpg', 'images/small/11.jpg', 'images/small/10.jpg'],
+                    'large'         : ['images/large/11.jpg','images/large/15.jpg', 'images/large/11.jpg', 'images/large/10.jpg'],
+                    'button_list'   :
+                    [
+                        { 'title':'Demo', 'url' : 'http://porfolio.bonchen.net/', 'new_window' : true },
+                        { 'title':'Download', 'url':'http://porfolio.bonchen.net/', 'new_window' : true}
+                    ],
+                    'tags'          : ['Advertising', 'Material Design']
+                },
+                {
+                    'title'         : 'First Story S13E15:<br/>Death of a Carver / Aboriginal Rights for Women',
+                    'description'   : 'Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot.Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage.',
+                    'thumbnail'     : ['images/small/carver.jpg','images/small/15.jpg', 'images/small/11.jpg', 'images/small/10.jpg'],
+                    'large'         : ['images/large/3.jpg','images/large/15.jpg', 'images/large/11.jpg', 'images/large/10.jpg'],
+                    'button_list'   :
+                    [
+                        { 'title':'Demo', 'url' : 'http://porfolio.bonchen.net/', 'new_window' : true },
+                        { 'title':'Download', 'url':'http://porfolio.bonchen.net/', 'new_window' : true}
+                    ],
+                    'tags'          : ['Compositions']
+                },
+                {
+                    'title'         : 'First Story S14E01:<br/>Broken Homes',
+                    'description'   : 'Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot.Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage.',
+                    'thumbnail'     : ['images/small/first.jpg','images/small/8.jpg', 'images/small/9.jpg', 'images/small/10.jpg'],
+                    'large'         : ['images/large/5.jpg','images/large/8.jpg', 'images/large/9.jpg', 'images/large/10.jpg'],
+                    'button_list'   :
+                    [
+                        { 'title':'Demo', 'url' : 'http://porfolio.bonchen.net/', 'new_window' : true },
+                        { 'title':'Download', 'url':'http://porfolio.bonchen.net/', 'new_window' : true}
+                    ],
+                    'tags'          : ['Compositions']
+                },
+                {
+                    'title'         : 'James Joyce Quarterly: "Digital Ulysses"',
+                    'description'   : 'Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot.Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage.',
+                    'thumbnail'     : ['images/small/jjq.jpg', 'images/small/13.jpg', 'images/small/14.jpg', 'images/small/15.jpg', 'images/small/16.jpg'],
+                    'large'         : ['images/large/6.jpg', 'images/large/13.jpg', 'images/large/14.jpg', 'images/large/15.jpg', 'images/large/16.jpg'],
+                    'button_list'   :
+                    [
+                        { 'title':'Demo', 'url' : 'http://porfolio.bonchen.net/', 'new_window' : true },
+                        { 'title':'Download', 'url':'http://porfolio.bonchen.net/', 'new_window' : true}
+                    ],
+                    'tags'          : ['Publications']
+                },
+				{
+                    'title'         : 'Sage Software',
+                    'description'   : 'Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot.Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage.',
+                    'thumbnail'     : ['images/small/sage.jpg', 'images/small/13.jpg', 'images/small/14.jpg', 'images/small/15.jpg', 'images/small/16.jpg'],
+                    'large'         : ['images/large/6.jpg', 'images/large/13.jpg', 'images/large/14.jpg', 'images/large/15.jpg', 'images/large/16.jpg'],
+                    'button_list'   :
+                    [
+                        { 'title':'Demo', 'url' : 'http://porfolio.bonchen.net/', 'new_window' : true },
+                        { 'title':'Download', 'url':'http://porfolio.bonchen.net/', 'new_window' : true}
+                    ],
+                    'tags'          : ['Documentation', 'Web Design']
+                },
+                {
+                    'title'         : 'Swiss chard pumpkin',
+                    'description'   : 'Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot.Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage.',
+                    'thumbnail'     : ['images/small/8.jpg', 'images/small/18.jpg', 'images/small/19.jpg', 'images/small/20.jpg'],
+                    'large'         : ['images/large/8.jpg', 'images/large/18.jpg', 'images/large/19.jpg', 'images/large/20.jpg'],
+                    'button_list'   :
+                    [
+                        { 'title':'Demo', 'url' : 'http://porfolio.bonchen.net/', 'new_window' : true },
+                        { 'title':'Download', 'url':'http://porfolio.bonchen.net/', 'new_window' : true}
+                    ],
+                    'tags'          : ['Publications']
+                },
+                {
+                    'title'         : 'Spinach winter purslane',
+                    'description'   : 'Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot.Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage.',
+                    'thumbnail'     : ['images/small/9.jpg','images/small/15.jpg', 'images/small/11.jpg', 'images/small/10.jpg'],
+                    'large'         : ['images/large/9.jpg','images/large/15.jpg', 'images/large/11.jpg', 'images/large/10.jpg'],
+                    'button_list'   :
+                    [
+                        { 'title':'Demo', 'url' : 'http://porfolio.bonchen.net/', 'new_window' : true },
+                        { 'title':'Download', 'url':'http://porfolio.bonchen.net/', 'new_window' : true}
+                    ],
+                    'tags'          : ['Publications']
+                } */
+				
+
+            ]
+        });
+    });
 </script>
-    </head>
-
-    <body>
-        <div class="title">
-            <br/>
-            <br/>
-            <br/>
-            <h1 >Zaqir Virani <br /></h1> 
-            <h2>Session &amp; Creative</h2>
-            <br/>
-            <br/>
-        </div>
-        
-        <div class="message">
-            <p style="font-size: 150%; text-align: center; color: #FFFFFF; text-decoration: underline;">Under Development</p>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
-        </div>
-        
-        <div style="text-align: center;">
-            <a href="http://www.instagram.com/zaqirvirani" target="_top"><img src="instagram.png" alt="" title="ZVSC on Instagram" style="max-width: 12%; max-height: 12%;"/></a>
-            <a href="https://www.soundcloud.com/zaqir-virani" target="_top"><img src="soundcloud.png" alt=""  title="ZVSC on Soundcloud" style="max-width: 12%; max-height: 12%;"/></a>
-            <a href="http://ca.linkedin.com/pub/zaqir-virani/94/701/a17" target="_top"><img src="linkedin.png" alt=""  title="Zaqir Virani on LinkedIn" style="max-width: 12%; max-height: 12%;"/></a>
-            <a href="https://twitter.com/zaqirvirani" target="_top"><img src="twitter.png" alt="" title="Zaqir Virani on Twitter" style="max-width: 10%; max-height: 10%;"/></a>
-            <br/>
-            <br/>
-            <br/>
-        </div>
-        
-        <div style="text-align: center;">
-            <p style="color: #FFFFFF; font-size: 150%;">zaqir.virani@gmail.com</p>
-            <br/>
-        </div>
-    </body>
+    
+	<div style="height: 100px; width: 100%; color: #ffffff;"></div>
+	<div id="about">
+	<p style="align: bottom; position: absolute; padding-top: 48vh; float: left;">Design and contents by Zaqir Virani <br/> zaqir.virani@gmail.com</p>
+					<div style="align: bottom; position: absolute; padding-top: 48vh; width: 99.9%; float: right;">
+		<a href="http://twitter.com/zaqirvirani" target="_blank"><img class="metabuttons" src="images/buttons/twitter.png"> </a>
+        <a href="http://instagram.com/zaqirvirani" target="_blank"><img class="metabuttons" src="images/buttons/instagram.png"> </a>
+        <a href="https://ca.linkedin.com/in/zaqirvirani" target="_blank"><img class="metabuttons" src="images/buttons/linkedin.png"> </a>
+        <a href="https://soundcloud.com/zaqir-virani" target="_blank"><img class="metabuttons" src="images/buttons/soundcloud.png"> </a>
+		</div>
 </html>
