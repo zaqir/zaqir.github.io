@@ -171,11 +171,13 @@ header.smaller nav a {
 h1 {
     font-family:Raleway-ExtraLight;
     color:#F5F5E3;
-    font-size:200%;
+    font-size:250%;
 	font-weight: lighter;
-    margin-top:5vh;
+	line-height: 5vh;
+	margin-top: 10vh;
     margin-left:1.5em;
-	opacity: 0.8;
+	opacity: 0.6;
+
 }
 
 h2 {
@@ -184,6 +186,20 @@ h2 {
     font-size:100%;
     font-weight:lighter;
     margin-left:6em
+}
+
+h6 {
+    font-family:Raleway-ExtraLight;
+    color:#F5F5E3;
+    font-size:300%;
+	letter-spacing: 0.3em;
+	font-weight: lighter;
+	line-height: 20vh;
+	margin-top: 10vh;
+    text-align: center;
+	padding-left: 2vw;
+	opacity: 0.9;
+
 }
 
 a:link {
@@ -197,7 +213,8 @@ a:visited {
 
 div#placeholding {
     width:99.9vw;
-    height:75vh;
+	position: relative;
+    height:85vh;
     background-image:url(images/2.jpg);
     -moz-background-size:cover;
     -webkit-background-size:cover;
@@ -209,8 +226,8 @@ div#placeholding {
 }
 
 div #buttonrow {
-    padding-right:3vw;
-    margin-top:-5em
+	text-align: center;
+	display: inline-block;
 }
 
 .no-js #loader { display: none;  }
@@ -225,26 +242,29 @@ div #buttonrow {
 	background: url(images/loader.gif) center no-repeat #fff;
 }
 
+div#title {
+	
+	height: 75vh;
+}
+
 img.landingbuttons {
-    width:5%;
+    width:4%;
 	min-width: 2em;
-    float:right;
-    padding-right:1em;
+    letter-spacing:1em;
     opacity:.5
 }
 
 img.landingbuttons:hover {
-    width:5%;
+    width:4%;
 	min-width: 2em;
-    float:right;
-    padding-right:1em;
+    letter-spacing:1em;
     color:#F5F5E3;
     opacity:.9
 }
 
 div#navbar {
     width:100vw;
-    height:25vh;
+    height:15vh;
     background-color:#FFFFFF;
     -moz-background-size:cover;
     -webkit-background-size:cover;
@@ -258,11 +278,13 @@ div#navbar {
     opacity:.7
 }
 
-div#navbar p {
+div#space p {
     width:100vw;
     font-size:3vw;
-    font-weight:900;
+    font-weight:700;
+	text-align: center;
     margin-top:6vh;
+	opacity: 0.6;
     font-family:Raleway-ExtraLight;
     color:#454537
 }
@@ -354,14 +376,7 @@ h5 {
 	font-size: 2.5vmax;
 }
 
-h6 {
-    color:#FFF;
-    font-family:Raleway-ExtraLight;
-    font-weight:lighter;
-    text-align:center;
-	padding-top: 1vh;
-	font-size: 1.5vmax;
-}
+
 
 img.metabuttons {
 	float: right;
