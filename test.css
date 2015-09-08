@@ -198,7 +198,7 @@ h6 {
 	margin-top: 10vh;
     text-align: center;
 	padding-left: 2vw;
-	opacity: 0.9;
+	opacity: 0.8;
 
 }
 
@@ -250,7 +250,8 @@ div#title {
 img.landingbuttons {
     width:4%;
 	min-width: 2em;
-    letter-spacing:1em;
+	margin-left: 1em;
+	margin-right: 1em;
     opacity:.5
 }
 
@@ -381,7 +382,7 @@ h5 {
 img.metabuttons {
 	float: right;
 	padding-right: 1vw;
-    width:5vmax;
+    width:3vmax;
 }
 
 form {
