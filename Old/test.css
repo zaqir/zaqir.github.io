@@ -1,0 +1,395 @@
+/*
+
+Cascading Style Sheet for www.zaqirvirani.com
+Written by Zaqir Virani
+
+*/
+/* BODY AND FONT ---------------------------------------------------------------------------------------------------------------------------- BODY and FONT */
+* {
+    margin:0;
+    padding:0;
+    max-width:100%;
+    max-height:100%;
+    -webkit-font-smoothing:antialiased
+}
+
+@font-face {
+    font-family:Raleway-ExtraLight;
+    src:url(fonts/Raleway-ExtraLight.otf)
+}
+
+@font-face {
+    font-family:LeagueGothic-Regular;
+    src:url(fonts/LeagueGothic-Regular.otf)
+}
+
+/* Scroll HEADER   -----------------------------------------------------------------------------------------------------------SCROLLING RESIZEABLE NAV
+header {
+    width:100vw;
+    height:0;
+    overflow:hidden;
+    position:fixed;
+    top:0;
+    left:0;
+    z-index:999;
+    background-image:none;
+    -moz-background-size:cover;
+    -webkit-background-size:cover;
+    background-size:cover;
+    background-position:center center;
+    background-repeat:no-repeat;
+    background-attachment:relative;
+    -webkit-transition:height .3s;
+    -moz-transition:height .3s;
+    -ms-transition:height .3s;
+    -o-transition:height .3s;
+    transition:height .3s
+}
+
+ul#nav {
+    list-style-type:none;
+    display:inline
+}
+
+li#nav {
+    float:right;
+    padding-right:1em;
+    font-family:Raleway-ExtraLight;
+    font-size:100%;
+    display:block;
+    color:#FFF;
+    opacity:.6
+}
+
+header h1#logo {
+    display:inline-block;
+    height:0;
+    line-height:20vh;
+    float:left;
+    font-family:"Oswald",sans-serif;
+    font-size:300%;
+    color:#828282;
+    font-weight:400;
+    -webkit-transition:all .3s;
+    -moz-transition:all .3s;
+    -ms-transition:all .3s;
+    -o-transition:all .3s;
+    transition:all .3s;
+    margin-top:2em
+}
+
+header nav {
+    display:inline-block;
+    float:right;
+    padding-right:1em
+}
+
+header nav a {
+    line-height:120px;
+    color:#fff;
+    font-weight:700;
+    font-size:100%;
+    padding-right:.5em;
+    -webkit-transition:all .3s;
+    -moz-transition:all .3s;
+    -ms-transition:all .3s;
+    -o-transition:all .3s;
+    transition:all .3s
+}
+
+header nav a:hover {
+    color:#fff
+}
+
+header.smaller {
+    height:4vh;
+    background:rgba(0,0,0,0.8)
+}
+
+header.smaller h1#logo {
+    width:50vw;
+    height:8vh;
+    line-height:8vh;
+    font-size:1.5vw
+}
+
+header.smaller nav a {
+    line-height:4vh;
+    font-weight:lighter;
+    font-size:1.5vw;
+    color:#B2B2B2
+}
+
+header.smaller nav a:hover {
+    color:#FFF;
+    opacity:none
+}
+
+@media all and (max-width: 60px) {
+header h1#logo {
+    display:block;
+    float:none;
+    margin:0 auto;
+    height:100px;
+    line-height:100px;
+    text-align:center
+}
+
+header nav {
+    display:block;
+    float:none;
+    height:50px;
+    text-align:center;
+    margin:0 auto
+}
+
+header nav a {
+    line-height:50px;
+    margin:0 10px
+}
+
+header.smaller {
+    height:75px
+}
+
+header.smaller h1#logo {
+    height:40px;
+    line-height:40px;
+    font-size:30px
+}
+
+header.smaller nav {
+    height:35px
+}
+
+header.smaller nav a {
+    line-height:35px
+}
+}
+
+/*  Main Page ------------------------------------------------------------------------------------------------------------------------------------Main Page------------------------------------------------  */
+h1 {
+    font-family:Raleway-ExtraLight;
+    color:#F5F5E3;
+    font-size:250%;
+	font-weight: lighter;
+	line-height: 5vh;
+	margin-top: 10vh;
+    margin-left:1.5em;
+	opacity: 0.6;
+
+}
+
+h2 {
+    font-family:Raleway-ExtraLight;
+    color:#F5F5E3;
+    font-size:100%;
+    font-weight:lighter;
+    margin-left:6em
+}
+
+h6 {
+    font-family:Raleway-ExtraLight;
+    color:#F5F5E3;
+    font-size:300%;
+	letter-spacing: 0.3em;
+	font-weight: lighter;
+	line-height: 20vh;
+	margin-top: 10vh;
+    text-align: center;
+	padding-left: 2vw;
+	opacity: 0.8;
+
+}
+
+a:link {
+    color:#FFF;
+    text-decoration:none
+}
+
+a:visited {
+    color:#FFF
+}
+
+div#placeholding {
+    width:99.9vw;
+	position: relative;
+    height:85vh;
+    background-image:url(images/2.jpg);
+    -moz-background-size:cover;
+    -webkit-background-size:cover;
+    background-size:cover;
+    background-position:center bottom;
+    background-repeat:no-repeat;
+    background-attachment:relative;
+    overflow-y:hidden
+}
+
+div #buttonrow {
+	text-align: center;
+	display: inline-block;
+}
+
+.no-js #loader { display: none;  }
+.js #loader { display: block; position: absolute; left: 100px; top: 0; }
+.se-pre-con {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	background: url(images/loader.gif) center no-repeat #fff;
+}
+
+div#title {
+	
+	height: 75vh;
+}
+
+img.landingbuttons {
+    width:4%;
+	min-width: 2em;
+	margin-left: 1em;
+	margin-right: 1em;
+    opacity:.5
+}
+
+img.landingbuttons:hover {
+    width:4%;
+	min-width: 2em;
+    letter-spacing:1em;
+    color:#F5F5E3;
+    opacity:.9
+}
+
+div#navbar {
+    width:100vw;
+    height:15vh;
+    background-color:#FFFFFF;
+    -moz-background-size:cover;
+    -webkit-background-size:cover;
+    background-size:cover;
+    background-position:center center;
+    background-repeat:no-repeat;
+    background-attachment:relative;
+    overflow:hidden;
+    text-align:center;
+    overflow-y:hidden;
+    opacity:.7
+}
+
+div#space p {
+    width:100vw;
+    font-size:3vw;
+    font-weight:700;
+	text-align: center;
+    margin-top:6vh;
+	opacity: 0.6;
+    font-family:Raleway-ExtraLight;
+    color:#454537
+}
+
+/* Second Page ----------------------------------------------------------------------------------------------------------------------------------------Second Page-------------------------------------------- */
+div#tagline {
+    width:100vw;
+    height:40vh;
+    background-color:#FFFFFF;
+    opacity:.7;
+    -moz-background-size:cover;
+    -webkit-background-size:cover;
+    background-size:cover;
+    background-position:center center;
+    background-repeat:no-repeat;
+    background-attachment:relative;
+    overflow:hidden;
+    overflow-y:hidden;
+    text-align:center
+}
+
+div#tagline p.title {
+    width:100vw;
+    font-size:3.5vmax;
+    text-align:center;
+    margin-top:8vh;
+    margin-bottom:1vh;
+    font-family:LeagueGothic-Regular;
+    color:#454537
+}
+
+div#tagline p.runner {
+    width:100vw;
+    font-size:2vmax;
+    text-align:center;
+    font-family:Raleway-ExtraLight;
+    font-weight:700;
+    color:#454537
+}
+
+
+
+/* About ----------------------------------------------------------------------------------------------*/
+
+div#about {
+
+    width:99.9vw;
+    height:60vh;
+	position: relative;
+    background-image:url(images/about.jpg);
+    -moz-background-size:cover;
+    -webkit-background-size:cover;
+    background-size:cover;
+    background-position:center top;
+    background-repeat:no-repeat;
+    background-attachment:relative;
+    overflow-y:hidden
+}
+
+div#about p {
+
+font-family:Arial;
+color: #9C2E2E;
+float: left;
+padding-left: 1vw;
+
+}
+
+/* Footer ----------------------------------------------------------------------------------------------------------------------------------------------- Footer */
+div#footer {
+    width:100vw;
+    background-color:#2B2B2B;
+    font-family:Raleway-ExtraLight;
+    font-weight:lighter;
+    color:#FFF;
+    position:absolute;
+    z-index:1
+}
+
+div#footer span {
+    font-size:70%
+}
+
+h5 {
+    color:#FFF;
+    font-family:LeagueGothic-Regular;
+    font-weight:lighter;
+    text-align:center;
+	font-size: 2.5vmax;
+}
+
+
+
+img.metabuttons {
+	float: right;
+	padding-right: 1vw;
+    width:3vmax;
+}
+
+form {
+text-align: center;
+padding-top: 2vh;
+padding-bottom: 2vh;
+
+}
+
+

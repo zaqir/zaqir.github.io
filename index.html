@@ -1,334 +1,542 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <title>Zaqir Virani</title>
-    <meta content=
-    "The digital portfolio of Zaqir Virani - technical and creative consultant, author, and session musician."
-    name="description">
-	<!--  Facebook Opengraph Meta Tags  -->
-    <meta content="website">
-    <meta content="images/opengraph_snip.png">
-    <meta content="http://www.zaqirvirani.com">
-    <!--  Twitter Card Meta Tags   -->
-    <meta content="" name="twitter:card">
-    <meta content="" name="twitter:url">
-    <meta content="" name="twitter:title">
-    <meta content="" name="twitter:description">
-    <meta content="" name="twitter:image">
-    <link href="test.css" rel="stylesheet" type="text/css">
-	<link rel="shortcut icon" href="favicon.ico">
-    <style type="text/css"></style>
-    <script src='js/scroll.js'></script>
-    <script src="js/classie.js"></script>
-    <script>
-function init() {
-        window.addEventListener('scroll', function(e){
-            var distanceY = window.pageYOffset || document.documentElement.scrollTop,
-                shrinkOn = 300,
-                header = document.querySelector("header");
-            if (distanceY > shrinkOn) {
-                classie.add(header,"smaller");
-            } else {
-                if (classie.has(header,"smaller")) {
-                    classie.remove(header,"smaller");
-                }
-            }
-        });
-    }
-    window.onload = init();
-    </script>
-    <script>
-    jQuery(document).ready(function($) {
+<html lang="en">
 
-            $(".scroll").click(function(event) {
-                event.preventDefault();
-                $('html,body').animate({
-                    scrollTop: $(this.hash).offset().top
-                }, 1400);
-            });
-        });
-    </script>
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
-<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
-<script>
-$(window).load(function() {
-		// Animate loader off screen
-		$(".se-pre-con").fadeOut("slow");;
-	});
-	</script>
-	    <link rel="stylesheet" type="text/css" href="css/demo.css" />
-	<link rel="stylesheet" type="text/css" href="css/elastic_grid.min.css" />
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Zaqir V</title>
+    <link rel="icon" href="img/fav.png" type="image/x-icon">
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="ionicons/css/ionicons.min.css" rel="stylesheet">
+
+    <!-- main css -->
+    <link href="css/style.css" rel="stylesheet">
+
+
+    <!-- modernizr -->
+    <script src="js/modernizr.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
 </head>
 
-<body class="no-touch">
-<div class="se-pre-con"></div>
+<body>
 
-    <div id="placeholding">
-	
-	     <h6>zaqir virani</h6>
-		         <div id="buttonrow">
-            <a href="http://twitter.com/zaqirvirani" target="_blank"><img class="landingbuttons" src="images/buttons/twitter.png"></a> 
-			<a href="http://instagram.com/zaqirvirani" target="_blank"><img class="landingbuttons" src= "images/buttons/instagram.png"></a> 
-			<a href="https://ca.linkedin.com/in/zaqirvirani" target="_blank"><img class="landingbuttons" src="images/buttons/linkedin.png"></a> 
-			<a href="https://soundcloud.com/zaqir-virani" target="_blank"><img class="landingbuttons" src="images/buttons/soundcloud.png"></a>
-        </div>	
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="pre-container">
+            <div class="spinner">
+                <div class="double-bounce1"></div>
+                <div class="double-bounce2"></div>
+            </div>
+        </div>
+    </div>
+    <!-- end Preloader -->
+
+    <div class="container-fluid">
+        <!-- box header -->
+        <header class="box-header" style="display:none;">
+
+            <!-- box-nav -->
+            <a class="box-primary-nav-trigger" href="#0">
+                <span class="box-menu-text">Menu</span><span class="box-menu-icon"></span>
+            </a>
+
+        </header>
+        <!-- end box header -->
+
+        <!-- nav -->
+        <nav>
+            <ul class="box-primary-nav">
+                <li><a href="portfolio.html">portfolio</a></li>
+                <li><a href="contact.html">contact me</a></li>
+
+
+
+                <li class="box-label">Follow me</li>
+
+                <li class="box-social"><a href="#0"><i class="ion-social-facebook"></i></a></li>
+                <li class="box-social"><a href="#0"><i class="ion-social-instagram-outline"></i></a></li>
+                <li class="box-social"><a href="#0"><i class="ion-social-twitter"></i></a></li>
+                <li class="box-social"><a href="#0"><i class="ion-social-dribbble"></i></a></li>
+            </ul>
+        </nav>
+
+
+        <!-- box-intro -->
+        <section class="box-intro" style="background-image: url(img/banner.jpg); background-repeat: no-repeat; background-position: center center; background-attachment: fixed;">
+            <div class="table-cell">
+                <h1 class="box-headline letters rotate-2">
+                    <span class="box-words-wrapper">
+                        <b class="is-visible">Zaqir.</b>
+                        <b>Virani.</b>
+                    </span>
+		        </h1>
+                <h5>Technical and Creative Works</h5
+            </div>
+
+            <div class="mouse">
+                <div class="scroll"></div>
+            </div>
+        </section>
+        <!-- end box-intro -->
     </div>
 
-    <div id="navbar">
-        <a class="scroll" href=
-        "#space"><img src="images/buttons/downarrow.png" style=
-        "height: 90%; padding-top: 2vh; opacity: 0.7;"></a>
-    </div>\
-	<div id="space" style="height: 100px; width: 100%; color: #ffffff;">
-	<p>words, music, and code.</p></div>
-<div id="elastic_grid_demo"></div>
+    <!-- main container -->
+    <div class="main-container portfolio-inner clearfix">
+        <!-- portfolio div -->
+        <div class="portfolio-div">
+            <div class="portfolio">
+                <!-- portfolio_filter -->
+                <div class="categories-grid wow fadeInLeft">
+                    <nav class="categories text-center">
+                        <ul class="portfolio_filter">
+                            <li><a href="" class="active" data-filter="*">All</a></li>
+                            <li><a href="" data-filter=".campaign">Campaigns</a></li>
+                            <li><a href="" data-filter=".tech">Technical Writing</a></li>
+                            <li><a href="" data-filter=".design">Sound and Design</a></li>
+                            <li><a href="" data-filter=".ed">Education</a></li>
+                            <li><a href="" data-filter=".edit">Editing</a></li>
+                            <li><a href="" data-filter=".web">Web Development</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <!-- portfolio_filter -->
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-<script src="js/modernizr.custom.js"></script>
-<script src="js/classie.js"></script>
-<!--- uncompress-->
-<!-- <script type="text/javascript" src="js/jquery.elastislide.js"></script>
-<script type="text/javascript" src="js/jquery.hoverdir.js"></script>-->
-<script type="text/javascript" src="js/elastic_grid.js"></script>
+                <!-- portfolio_container -->
+                <div class="no-padding portfolio_container clearfix">
+                  <!-- single work -->
+                  <div class="col-md-4 col-sm-6 tech web edit">
+                      <a href="http://resonatormagazine.github.io/ContributorFAQ/" target="_blank" class="portfolio_item">
+                          <img src="img/res-01.png" alt="image" class="img-responsive" />
+                          <div class="portfolio_item_hover">
+                              <div class="portfolio-border clearfix">
+                                  <div class="item_info">
+                                      <span>Resonator Magazine</span>
+                                      <em>Documentation, Editorial, and GitHub Support for Resonator Magazine</em>
+                                  </div>
+                              </div>
+                          </div>
+                      </a>
+                  </div>
+                  <!-- end single work -->
+                    <!-- single work -->
+                    <div class="col-md-4 col-sm-6  campaign tech design edit web">
+                        <a href="http://www.lambdasolutions.net/moodle-configurable-theme/" target="_blank" class="portfolio_item">
+                            <img src="img/pic01.jpg" alt="image" class="img-responsive" />
+                            <div class="portfolio_item_hover">
+                                <div class="portfolio-border clearfix">
+                                    <div class="item_info">
+                                        <span>Lambda Liquid Theme</span>
+                                        <em>Documentation, Web Development, and Marketing for Lambda Solution's LMS Theme</em>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- end single work -->
 
-<!-- compress version-->
-<script type="text/javascript" src="js/elastic_grid.min.js"></script>
+                    <!-- single work -->
+                    <div class="col-md-4 col-sm-6 design web campaign tech edit">
+                        <a href="http://www.lambdasolutions.net/products/lmsreporting/" target="_blank" class="portfolio_item">
+                            <img src="img/pic02.jpg" alt="image" class="img-responsive" />
+                            <div class="portfolio_item_hover">
+                                <div class="portfolio-border clearfix">
+                                    <div class="item_info">
+                                        <span>Zoola Analytics</span>
+                                        <em>Documentation, Marketing, Web Development, UX Design for Lambda Solution' Zoola Analytics</em>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- end single work -->
 
-<script type="text/javascript">
-    $(function(){
-        $("#elastic_grid_demo").elastic_grid({
-            'showAllText' : 'All',
-            'filterEffect': 'popup', // moveup, scaleup, fallperspective, fly, flip, helix , popup
-            'hoverDirection': true,
-            'hoverDelay': 0,
-            'hoverInverse': false,
-            'expandingSpeed': 800,
-            'expandingHeight': 800,
-            'items' :
-            [
-                {
-                    'title'         : 'Kits for Cultural History:<br/>Electric Jewels',
-                    'description'   : 'During 2013-14, I participated in developing the Electric Jewels kit as a member of the Maker Lab. The Electric Jewels kit is designed to be a mass-produced educational tool for the tactile learning of fundamental circuitry and the history of electronics. As the Electrics Lead, my role was primarily to research and design the circuitry components to recreate and document the antique electronics discussed in the kits. Follow the link to an explanation on the Maker Lab homepage.',
-                    'thumbnail'     : ['images/small/arduino.jpg', 'images/small/jewels.jpg'],
-                    'large'         : ['images/large/arduino.jpg', 'images/large/schem1.jpg'],
-                    'button_list'   :
-                    [
-                        { 'title':'Maker Lab - Electric Jewels', 'url' : 'http://maker.uvic.ca/kch/', 'new_window' : true },
-                    ],
-                    'tags'          : ['Research', 'Material Design']
-                },
-                {
-                    'title'         : 'Kits for Cultural History:<br/>The Wire Recorder Kit',
-                    'description'   : 'During 2013-14, I participated in developing the Wire Recorder kit as a member of the Maker Lab. The Wire Recorder kit is designed to be a mass-produced educational tool for the tactile learning of magnetic recording and the history of audio production. Follow the link to an explanation on the Maker Lab homepage.',
-                    'thumbnail'     : ['images/small/ferrite.jpg', 'images/small/ferrite2.jpg'],
-                    'large'         : ['images/large/ferrite.jpg', 'images/large/ferrite2.jpg'],
-                    'button_list'   :
-                    [
-                        { 'title':'Maker Lab - Wire Recorder', 'url' : 'http://maker.uvic.ca/kch/', 'new_window' : true },
-                    ],
-                    'tags'          : ['Research', 'Material Design']
-                },
-               {
-                    'title'         : '"Cultural or Technological Determinism?"',
-                    'description'   : 'As a researcher and developer on the Kits team for the Maker Lab, I wrote this article to discuss the ramifications of employing modern materials to craft antique devices, in an educational contest. Follow the link to a copy of the article.',
-                    'thumbnail'     : ['images/small/kits.jpg'],
-                    'large'         : ['images/large/trouve.jpg',],
-                    'button_list'   : 
-                    [
-                        { 'title':'Article', 'url' : 'http://maker.uvic.ca/determinism/', 'new_window' : true },
-                    ],
-                    'tags'          : ['Publications', 'Material Design']
-                },
-                {
-                    'title'         : 'The Geospatial Illiad',
-                    'description'   : 'As part of the Myths on Maps research initiative in the Humanities Computing and Media Centre, I helped edit and embed GIS coordinates into an interactive edition of the Illiad, allowing users to explore geospatial concept mapping of characters, settings, and themes. The project is ongoing, and a low-grade development version is available for public use through the link below.',
-                    'thumbnail'     : ['images/small/mom.jpg', 'images/small/greece.jpg'],
-                    'large'         : ['images/large/mom.jpg', 'images/large/greece.jpg'],
-                    'button_list'   :
-                    [
-                        { 'title':'Demo', 'url' : 'http://myths.uvic.ca/map.xql', 'new_window' : true },
-                    ],
-                    'tags'          : ['Web Design', 'Research', 'Publications']
-                },
-               {
-                    'title'         : '"From the Ground Up"',
-                    'description'   : 'In the spring of 2014, I scored this documentary film by Kim Jay. Funded by The Saskatchewan Arts Board, Odlum Brown Investing, and The Sam Project, Kim spent time in Zambia covering a family and their life and coping with seasonal drought. With the exception of the intro and outro credits songs, the entirety of the film is scored by me on acoustic steel-string guitar. The finished cut is now in the hands of The Sam Project, but a development version is available for viewing on Vimeo, accesible through the following link.',
-                    'thumbnail'     : ['images/small/ground.jpg','images/small/ground1.jpg'],
-                    'large'         : ['images/large/ground.jpg','images/large/ground1.jpg'],
-                    'button_list'   :
-                    [
-                        { 'title':'Watch the FIlm', 'url' : 'https://vimeo.com/105999236', 'new_window' : true },
-                    ],
-                    'tags'          : ['Compositions']
-                },
-                {
-                    'title'         : 'TAG Creative Cover Page',
-                    'description'   : 'Head over to the TAG Creative website and take a look at their elegant coming-soon cover page. Based on a design put together by the Creative Director, I coded up this page to hold down the fort until their full site launches. See the TAG Creative website by clicking the following link.',
-                    'thumbnail'     : ['images/small/troy.jpg', ],
-                    'large'         : ['images/large/TAG.jpg',],
-                    'button_list'   :
-                    [
-                        { 'title':'TAG Creative Website', 'url' : 'http://troyadamgordon.com/', 'new_window' : true },
-                     
-                    ],
-                    'tags'          : ['Web Design']
-                },
-                 {
-                    'title'         : 'Routledge Encyclopedia of Modernism',
-                    'description'   : 'From 2014 to 2015 I worked under contract with Routledge Publishing to work with a team of editors to prepare the entries for the Routledge Encyclopedia of Modernism. The REM will offer online access to articles on any literature, art, design, architecture, music, or political movement that can in any way be associated with the concept of Modernism. Our team worked remotely from Vancouver and Victoria to assemble, edit, and prepare the entries for online publishing in XML templates. The encyclopedia is set to go live in 2016 - when it does, there will be a handy link here to offer direct access. ',
-                    'thumbnail'     : ['images/small/rem.jpg',],
-                    'large'         : ['images/large/roy.jpg',],
-                    'button_list'   :
-                    [
-                      /*  { 'title':'Demo', 'url' : 'http://porfolio.bonchen.net/', 'new_window' : true },
-                        { 'title':'Download', 'url':'http://porfolio.bonchen.net/', 'new_window' : true} */
-                    ],
-                    'tags'          : ['Publications', 'Research',]
-                },
-				{
-                    'title'         : 'Resonator Magazine',
-                    'description'   : 'Currently being built - At the moment, I serve the roles of co-designer and editor, shared with the rest of our team. Resonator Magazine is a startup digital publication that showcases independent artists, music history and theory, and DIY gear. The current project involves standard and mobile platforms for content distribution, as well as cross-compatibility with aspects of digital music staples Spotify and Last FM. Currently, visiting the linked address will display an introductory page.',
-					<!-- the first thumbnail shows in the gallery, the next four also run as a slider in the expanded view -->
-                    'thumbnail'     : ['images/small/resonator1.jpg', 'images/small/resonator.jpg'],
-                    'large'         : ['images/large/resonator1.jpg', 'images/large/resonator.jpg'],
-                    'button_list'   :
-                    [
-                        { 'title':'Resonator Homepage', 'url' : 'http://resonatormagazine.com/', 'new_window' : true }
-                    ],
-                    'tags'          : ['Web Design', 'Publications', 'Companies', 'Documentation',]
-                },
-                {
-                    'title'         : 'Resonator Internal Documentation',
-                    'description'   : 'The Resonator FAQ is a hosted page I designed and maintain for team members of Resonator Magazine. This documentation site encompasses the processes required of contributors ranging from authors and photographers to desiners and advertisers. The content covers use of GitHub, the CMS, and the editorial and style guide points. The FAQ is hosted with GitHub Pages. Follow the link to see a sample.',
-                    'thumbnail'     : ['images/small/resdoc.jpg', 'images/small/resonator_faq.jpg',],
-                    'large'         : ['images/large/resdoc.jpg', 'images/large/FAQ.jpg',],
-                    'button_list'   :
-                    [
-                        { 'title':'FAQ Sample', 'url' : 'http://resonatormagazine.github.io/ContributorFAQ/', 'new_window' : true },
-                    ],
-                    'tags'          : ['Web Design', 'Documentation', 'Publications']
-                },
-                /*{
-                    'title'         : 'MonsterCat Campaign:<br/>Robots',
-                    'description'   : 'Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot.Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage.',
-                    'thumbnail'     : ['images/small/monstercat.jpg','images/small/15.jpg', 'images/small/11.jpg', 'images/small/10.jpg'],
-                    'large'         : ['images/large/11.jpg','images/large/15.jpg', 'images/large/11.jpg', 'images/large/10.jpg'],
-                    'button_list'   :
-                    [
-                        { 'title':'Demo', 'url' : 'http://porfolio.bonchen.net/', 'new_window' : true },
-                        { 'title':'Download', 'url':'http://porfolio.bonchen.net/', 'new_window' : true}
-                    ],
-                    'tags'          : ['Advertising', 'Material Design']
-                },*/
-                {
-                    'title'         : 'First Story S13E15:<br/>"Death of a Carver / Aboriginal Rights for Women"',
-                    'description'   : 'I composed the majority of the score for this episode, which aired nationally in 2011 on CTV. This particular episode of First Story received an immensely positive reception - specifically, Death of a Carver was a 2011 RTDNA award finalist, and was also a finalist for the Jack Webster award for Best Feature Story. The following link directs you to a copy of the episode hosted by CTV.',
-                    'thumbnail'     : ['images/small/carver.jpg',],
-                    'large'         : ['images/large/firststory.jpg',],
-                    'button_list'   :
-                    [
-                        { 'title':'See the Video on CTV', 'url' : 'http://bc.ctvnews.ca/video?playlistId=1.1000125', 'new_window' : true },
-                    ],
-                    'tags'          : ['Compositions', 'Publications']
-                },
-                {
-                    'title'         : 'First Story S14E01:<br/>"Broken Homes"',
-                    'description'   : 'I contributed to the score for this episode, which aired nationally in 2012 on CTV.',
-                    'thumbnail'     : ['images/small/first.jpg',],
-                    'large'         : ['images/large/firststory2.jpg',],
-                    'button_list'   :
-                    [
-					
-                    ],
-                    'tags'          : ['Compositions']
-                },
-                {
-                    'title'         : 'Camp Ulysses: Versioning, Collation, and the Digital Ulysses"',
-                    'description'   : 'This article was published in the James Joyce Quarterly journal, volume 49.2 (2013). After attending a conference and course lead by Hans Walter Gabler, the esteemed editor of the revised edition of Ulysses, my co-authors and I were asked to write a publishable summary and review of our experiences for this academic journal. The following links direct you to an index of the issue on the journal homepage and a copy of the article on Project Muse. ',
-                    'thumbnail'     : ['images/small/jjq1.jpg',],
-                    'large'         : ['images/large/jjq1.jpg',],
-                    'button_list'   :
-                    [
-                        { 'title':'James Joyce Quarterly Index', 'url' : 'http://utulsa.edu/jjq/currentissue.html', 'new_window' : true },
-                        { 'title':'Article on Project Muse', 'url':'http://muse.jhu.edu/login?auth=0&type=summary&url=/journals/james_joyce_quarterly/v049/49.2.ferguson.html', 'new_window' : true}
-                    ],
-                    'tags'          : ['Publications']
-                },
-				{
-                    'title'         : 'Sage Software',
-                    'description'   : 'From 2014 to 2015 I worked with the Canadian office for Sage Software as an Information Designer and Content Specialist. This position involved maintaining and rewriting legacy documentation for Sage 300, and bolstering their interactive HTML in-product help system through Madcap Flare. I also worked with a team of developers in India to coordinate our resx architecture. The software is proprietary, so the following link takes you to the Sage homepage.',
-                    'thumbnail'     : ['images/small/sage.jpg',],
-                    'large'         : ['images/large/sage.jpg',],
-                    'button_list'   :
-                    [
-                        { 'title':'Sage Homepage', 'url' : 'http://www.sage.com/ca', 'new_window' : true },
-                    ],
-                    'tags'          : ['Documentation', 'Web Design', 'Companies']
-                },
-                {
-                    'title'         : 'MoEML',
-                    'description'   : 'From 2013 to 2014 I worked for the Map of Early Modern London project as an encoder, researcher, and social media strategist. MoEML is a research initiative working out of the University of Victoria - the end goal is to host an interactive library of digitally produced and conserved iterations of early modern text, linked by GIS to a hybrid map. In addition to making culturally essential literature completely open-access, the mapping tools and open-source XML documents are driving humanities research at a fantastic rate. As an overarching researcher, my various titles were: Author, CSS Editor, Conservator, Encoder, Markup Editor, and Toponymist. The first of the following links takes you to my MoEML employee page. The second of the following links takes you to the MoEML website - I encourage you to play around with it.',
-                    'thumbnail'     : ['images/small/moeml.jpg',],
-                    'large'         : ['images/large/moeml.jpg',],
-                    'button_list'   :
-                    [
-                        { 'title':'Employee Profile', 'url' : 'https://mapoflondon.uvic.ca/VIRA1.htm', 'new_window' : true },
-                        { 'title':'MoEML Home', 'url':'https://mapoflondon.uvic.ca/', 'new_window' : true}
-                    ],
-                    'tags'          : ['Publications', 'Companies', 'Documentation']
-                },
-				{
-                    'title'         : 'The Maker Lab',
-                    'description'   : 'Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot.Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage.',
-                    'thumbnail'     : ['images/small/mlab.jpg',],
-                    'large'         : ['images/large/mlab.jpg',],
-                    'button_list'   :
-                    [
-                        { 'title':'Demo', 'url' : 'http://porfolio.bonchen.net/', 'new_window' : true },
-                        { 'title':'Download', 'url':'http://porfolio.bonchen.net/', 'new_window' : true}
-                    ],
-                    'tags'          : ['Publications', 'Companies', 'Documentation']
-				},
-				{
-                    'title'         : 'CSRS',
-                    'description'   : 'Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot.Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage.',
-                    'thumbnail'     : ['images/small/csrs.jpg',],
-                    'large'         : ['images/large/csrs.jpg',],
-                    'button_list'   :
-                    [
-                        { 'title':'Demo', 'url' : 'http://porfolio.bonchen.net/', 'new_window' : true },
-                        { 'title':'Download', 'url':'http://porfolio.bonchen.net/', 'new_window' : true}
-                    ],
-                    'tags'          : ['Publications', 'Companies']
-                },
-				
-					
-                /*{
-                    'title'         : 'Spinach winter purslane',
-                    'description'   : 'Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot.Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage.',
-                    'thumbnail'     : ['images/small/9.jpg','images/small/15.jpg', 'images/small/11.jpg', 'images/small/10.jpg'],
-                    'large'         : ['images/large/9.jpg','images/large/15.jpg', 'images/large/11.jpg', 'images/large/10.jpg'],
-                    'button_list'   :
-                    [
-                        { 'title':'Demo', 'url' : 'http://porfolio.bonchen.net/', 'new_window' : true },
-                        { 'title':'Download', 'url':'http://porfolio.bonchen.net/', 'new_window' : true}
-                    ],
-                    'tags'          : ['Publications']
-                } */
-				
+                    <!-- single work -->
+                    <div class="col-md-4 col-sm-12 campaign design">
+                        <a href="https://www.youtube.com/watch?v=zgivISTljx8" target="_blank" class="portfolio_item">
+                            <img src="img/pic04.jpg" alt="image" class="img-responsive" />
+                            <div class="portfolio_item_hover">
+                                <div class="portfolio-border clearfix">
+                                    <div class="item_info">
+                                        <span>FansUnite Trailer</span>
+                                        <em>Concept, Script, and Voiceover for Commercial Video</em>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- end single work -->
 
-            ]
-        });
-    });
-</script>
-    
-	<div style="height: 100px; width: 100%; color: #ffffff;"></div>
-	<div id="about">
+                    <!-- single work -->
+                    <div class="col-md-4 col-sm-6 tech ed edit web">
+                        <a href="https://www.rem.routledge.com/" target="_blank" class="portfolio_item">
+                            <img src="img/rem.jpg" alt="image" class="img-responsive" />
+                            <div class="portfolio_item_hover">
+                                <div class="portfolio-border clearfix">
+                                    <div class="item_info">
+                                        <span>Routledge Encyclopedia of Modernism</span>
+                                        <em>Copy Editing and Templating for the Routledge Encyclopedia</em>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- end single work -->
 
-					<div style="align: bottom; position: absolute; padding-top: 48vh; width: 99.9%; float: right;">
-		<a href="http://twitter.com/zaqirvirani" target="_blank"><img class="metabuttons" src="images/buttons/twitter.png"> </a>
-        <a href="http://instagram.com/zaqirvirani" target="_blank"><img class="metabuttons" src="images/buttons/instagram.png"> </a>
-        <a href="https://ca.linkedin.com/in/zaqirvirani" target="_blank"><img class="metabuttons" src="images/buttons/linkedin.png"> </a>
-        <a href="https://soundcloud.com/zaqir-virani" target="_blank"><img class="metabuttons" src="images/buttons/soundcloud.png"> </a>
-		</div>
+                    <!-- single work -->
+                    <div class="col-md-4 col-sm-12 edit tech">
+                        <a href="http://www.sage.com/ca/erp/sage-300" target="_blank" class="portfolio_item">
+                            <img src="img/pic05.jpg" alt="image" class="img-responsive" />
+                            <div class="portfolio_item_hover">
+                                <div class="portfolio-border clearfix">
+                                    <div class="item_info">
+                                        <span>Sage 300</span>
+                                        <em>Technical Writing and Content Editing for Sage 300</em>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- end single work -->
+
+                    <!-- single work -->
+                    <div class="col-md-4 col-sm-6 web design">
+                        <a href="" class="portfolio_item">
+                            <img src="img/pic06.jpg" alt="image" class="img-responsive" />
+                            <div class="portfolio_item_hover">
+                                <div class="portfolio-border clearfix">
+                                    <div class="item_info">
+                                        <span>Snowpack Theme</span>
+                                        <em>Web Development of Snowpack Theme (HTML, CSS, JS)</em>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- end single work -->
+
+                    <!-- single work -->
+                    <div class="col-md-4 col-sm-6 tech web edit ed">
+                        <a href="https://mapoflondon.uvic.ca/" target="_blank" class="portfolio_item">
+                            <img src="img/pic08.jpg" alt="image" class="img-responsive" />
+                            <div class="portfolio_item_hover">
+                                <div class="portfolio-border clearfix">
+                                    <div class="item_info">
+                                        <span>Map of Early Modern London</span>
+                                        <em>Technical Writing, Web Development, and Archival Encoding for MOEML</em>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- end single work -->
+
+                    <!-- single work -->
+                    <div class="col-md-4 col-sm-6 design">
+                        <a href="http://bc.ctvnews.ca/video?playlistId=1.1000125" target="_blank" class="portfolio_item">
+                            <img src="img/pic09.jpg" alt="image" class="img-responsive" />
+                            <div class="portfolio_item_hover">
+                                <div class="portfolio-border clearfix">
+                                    <div class="item_info">
+                                        <span>CTV's First Story</span>
+                                        <em>Score for S13E05 and S14E01 of CTV's First Story</em>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- end single work -->
+                    <!-- single work -->
+                    <div class="col-md-4 col-sm-6 design web">
+                        <a href="http://troyadamgordon.com/" target="_blank" class="portfolio_item">
+                            <img src="img/TAG.jpg" alt="image" class="img-responsive" />
+                            <div class="portfolio_item_hover">
+                                <div class="portfolio-border clearfix">
+                                    <div class="item_info">
+                                        <span>TAG Creative Landing Page</span>
+                                        <em>Web Development of Coming-Soon Page</em>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- end single work -->
+                    <!-- single work -->
+                    <div class="col-md-4 col-sm-6 design">
+                        <a href="https://vimeo.com/105999236" target="_blank" class="portfolio_item">
+                            <img src="img/fgu.jpg" alt="image" class="img-responsive" />
+                            <div class="portfolio_item_hover">
+                                <div class="portfolio-border clearfix">
+                                    <div class="item_info">
+                                        <span>From the Ground Up</span>
+                                        <em>Score for Documentary Film</em>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- end single work -->
+                    <!-- single work -->
+                    <div class="col-md-4 col-sm-6 tech ed edit web">
+                        <a href="http://maker.uvic.ca/kch/" target="_blank" class="portfolio_item">
+                            <img src="img/kch.jpg" alt="image" class="img-responsive" />
+                            <div class="portfolio_item_hover">
+                                <div class="portfolio-border clearfix">
+                                    <div class="item_info">
+                                        <span>Kits for Cultural History</span>
+                                        <em>Editing, Development, and Research for the Maker Lab's KFCH</em>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- end single work -->
+                    <!-- single work -->
+                    <div class="col-md-4 col-sm-6 design edit">
+                        <a href="http://drafthard.com" target="_blank" class="portfolio_item">
+                            <img src="img/dh.jpg" alt="image" class="img-responsive" />
+                            <div class="portfolio_item_hover">
+                                <div class="portfolio-border clearfix">
+                                    <div class="item_info">
+                                        <span>DraftHard</span>
+                                        <em>Web Design and Editorial for DraftHard</em>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- end single work -->
+                </div>
+                <!-- end portfolio_container -->
+            </div>
+            <!-- portfolio -->
+        </div>
+        <!-- end portfolio div -->
+
+
+
+
+
+
+
+    <!-- jQuery -->
+    <script src="js/jquery-2.1.1.js"></script>
+    <!--  plugins -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/animated-headline.js"></script>
+    <script src="js/isotope.pkgd.min.js"></script>
+
+
+    <!--  custom script -->
+    <script src="js/custom.js"></script>
+
+
+    <!-- portfolio div
+    <div class="portfolio-div">
+        <div class="portfolio">
+            <div class="no-padding portfolio_container">
+                <!-- single work -
+                <div class="col-md-3 col-sm-6  fashion logo">
+                    <a href="single-project.html" class="portfolio_item">
+                        <img src="img/pic01.jpg" alt="image" class="img-responsive" />
+                        <div class="portfolio_item_hover">
+                            <div class="portfolio-border clearfix">
+                                <div class="item_info">
+                                    <span>Mockups in seconds</span>
+                                    <em>Fashion / Logo</em>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- end single work -->
+
+                <!-- single work -
+                <div class="col-md-3 col-sm-6 ads graphics">
+                    <a href="single-project.html" class="portfolio_item">
+                        <img src="img/pic04.jpg" alt="image" class="img-responsive" />
+                        <div class="portfolio_item_hover">
+                            <div class="portfolio-border clearfix">
+                                <div class="item_info">
+                                    <span>Floating mockups</span>
+                                    <em>Ads / Graphics</em>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- end single work -->
+
+                <!-- single work -
+                <div class="col-md-6 col-sm-12 photography">
+                    <a href="single-project.html" class="portfolio_item">
+                        <img src="img/pic02.jpg" alt="image" class="img-responsive" />
+                        <div class="portfolio_item_hover">
+                            <div class="portfolio-border clearfix">
+                                <div class="item_info">
+                                    <span>Zoola Analytics</span>
+                                    <em>Software</em>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- end single work -->
+
+                <!-- single work -
+                <div class="col-md-3 col-sm-6 fashion ads">
+                    <a href="single-project.html" class="portfolio_item">
+                        <img src="img/arduino.jpg" alt="image" class="img-responsive" />
+                        <div class="portfolio_item_hover">
+                            <div class="portfolio-border clearfix">
+                                <div class="item_info">
+                                    <span>Held by hands</span>
+                                    <em>Fashion / Ads</em>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- end single work -->
+
+                <!-- single work -
+                <div class="col-md-3 col-sm-6 graphics ads">
+                    <a href="single-project.html" class="portfolio_item">
+                        <img src="http://placehold.it/1000x1000" alt="image" class="img-responsive" />
+                        <div class="portfolio_item_hover">
+                            <div class="portfolio-border clearfix">
+                                <div class="item_info">
+                                    <span>Mobile devices</span>
+                                    <em>Graphics / Ads</em>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- end single work -->
+
+                <!-- single work -
+                <div class="col-md-6 col-sm-12 photography">
+                    <a href="single-project.html" class="portfolio_item">
+                        <img src="http://placehold.it/1000x1000" alt="image" class="img-responsive" />
+                        <div class="portfolio_item_hover">
+                            <div class="portfolio-border clearfix">
+                                <div class="item_info">
+                                    <span>Photorealistic smartwatch</span>
+                                    <em>Photography</em>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- end single work
+
+                <!-- single work -
+                <div class="col-md-3 col-sm-6 graphics ads">
+                    <a href="single-project.html" class="portfolio_item">
+                        <img src="http://placehold.it/1000x1000" alt="image" class="img-responsive" />
+                        <div class="portfolio_item_hover">
+                            <div class="portfolio-border clearfix">
+                                <div class="item_info">
+                                    <span>Mobile devices</span>
+                                    <em>Graphics / Ads</em>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- end single work -->
+
+                <!-- single work -
+                <div class="col-md-3 col-sm-6 graphics ads">
+                    <a href="single-project.html" class="portfolio_item">
+                        <img src="http://placehold.it/1000x1000" alt="image" class="img-responsive" />
+                        <div class="portfolio_item_hover">
+                            <div class="portfolio-border clearfix">
+                                <div class="item_info">
+                                    <span>Mobile devices</span>
+                                    <em>Graphics / Ads</em>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- end single work -->
+
+                <!-- single work -
+                <div class="col-md-3 col-sm-6 graphics ads">
+                    <a href="single-project.html" class="portfolio_item">
+                        <img src="http://placehold.it/1000x1000" alt="image" class="img-responsive" />
+                        <div class="portfolio_item_hover">
+                            <div class="portfolio-border clearfix">
+                                <div class="item_info">
+                                    <span>Mobile devices</span>
+                                    <em>Graphics / Ads</em>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- end single work -->
+
+                <!-- single work -
+                <div class="col-md-3 col-sm-6 graphics ads">
+                    <a href="single-project.html" class="portfolio_item">
+                        <img src="http://placehold.it/1000x1000" alt="image" class="img-responsive" />
+                        <div class="portfolio_item_hover">
+                            <div class="portfolio-border clearfix">
+                                <div class="item_info">
+                                    <span>Mobile devices</span>
+                                    <em>Graphics / Ads</em>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- end single work -->
+            </div>
+            <!-- end portfolio_container -->
+        </div>
+        <!-- portfolio -->
+    </div>
+    <!-- end portfolio div -->
+
+    <!-- footer -->
+    <footer>
+        <div class="container-fluid">
+            <p class="copyright">©2017</p>
+        </div>
+    </footer>
+    <!-- end footer -->
+
+    <!-- back to top -->
+    <a href="#0" class="cd-top"><i class="ion-android-arrow-up"></i></a>
+    <!-- end back to top -->
+
+
+
+    <!-- jQuery -->
+    <script src="js/jquery-2.1.1.js"></script>
+    <!--  plugins -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/animated-headline.js"></script>
+    <script src="js/isotope.pkgd.min.js"></script>
+
+
+    <!--  custom script -->
+    <script src="js/custom.js"></script>
+
+</body>
+
 </html>
