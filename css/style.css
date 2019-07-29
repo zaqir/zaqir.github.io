@@ -1,4 +1,4 @@
-
+/*
 * Box Theme
 * Created by : Ahmed Eissa
 * website : www.ahmedessa.net
@@ -76,7 +76,7 @@ a {
 }
 
 .color {
-    color: #ffbf00;
+    color: #778f6f;
     font-size: 11px;
 }
 
@@ -95,7 +95,7 @@ h3 {
 }
 
 h5 {
-    color: #ffbf00;
+    color: #778f6f;
 }
 
 
@@ -137,7 +137,7 @@ h5 {
     width: 100%;
     height: 100%;
     border-radius: 50%;
-    background-color: #ffbf00;
+    background-color: #778f6f;
     opacity: 0.6;
     position: absolute;
     top: 0;
@@ -385,7 +385,7 @@ h5 {
 }
 
 .box-primary-nav .box-label {
-    color: #ffbf00;
+    color: #778f6f;
     text-transform: uppercase;
     font-weight: 700;
     font-size: 17px;
@@ -426,6 +426,9 @@ h5 {
     display: table;
     height: 100vh;
     width: 100%;
+    padding: 0;
+    padding-bottom: 15vh;
+    margin: 0;
 }
 
 .box-intro .table-cell {
@@ -439,13 +442,13 @@ h5 {
 }
 
 b i:last-child {
-    color: #ffbf00 !important;
+    color: #778f6f !important;
 }
 
 .box-intro h5 {
     letter-spacing: 4px;
     text-transform: uppercase;
-    color: #ffffff;
+    color: #999;
     line-height: 1.7
 }
 
@@ -543,7 +546,6 @@ b i:last-child {
     white-space: nowrap;
     left: 0;
     top: 0;
-    color: #ffffff;
 }
 
 .box-words-wrapper b.is-visible {
@@ -713,7 +715,7 @@ b i:last-child {
 
 .portfolio .categories-grid .categories ul li a.active {
     margin-left: 0;
-    background-color: #ffbf00;
+    background-color: #778f6f;
     padding: 0px 20px;
     color: white;
     border-radius: 25px;
@@ -770,7 +772,7 @@ b i:last-child {
 .portfolio_item .portfolio_item_hover .item_info em {
     font-style: normal;
     display: inline-block;
-    background-color: #ffbf00;
+    background-color: #778f6f;
     padding: 5px 20px;
     border-radius: 25px;
     color: #333;
@@ -880,7 +882,7 @@ footer img {
 
 .no-touch .cd-top:hover,
 .no-touch .cd-top:focus {
-    background-color: #ffbf00;
+    background-color: #778f6f;
     opacity: 1;
     color: #fff;
 }
@@ -888,87 +890,39 @@ footer img {
 
 /* About page
 ==================================================*/
+
 .top-bar {
     color: #333;
     padding: 150px 0 150px;
-    background: -webkit-linear-gradient( rgba(0, 0, 0, .3), rgba(255, 255, 255, .8)), url(../img/giphy.gif);
-    background: linear-gradient( rgba(0, 0, 0, .3), rgba(255, 255, 255, .8)), url(../img/giphy.gif);
+    background: -webkit-linear-gradient( rgba(255, 255, 255, .8), rgba(255, 255, 255, .8)), url(../img/01.jpg);
+    background: linear-gradient( rgba(255, 255, 255, .8), rgba(255, 255, 255, .8)), url(../img/01.jpg);
     background-size: cover;
     background-attachment: fixed;
     background-position: center center;
     text-align: center;
 }
 
-.top-bar-zoola {
-    color: #333;
-    padding: 150px 0 150px;
-    background: -webkit-linear-gradient( rgba(0, 0, 0, .3), rgba(0, 0, 0, .8)), url(../img/zoola_wide.jpg);
-    background: linear-gradient( rgba(0, 0, 0, .3), rgba(0, 0, 0, .8)), url(../img/zoola_wide.jpg);
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: bottom center;
-    text-align: center;
-}
-
-
-.top-bar-zoola h1 {
+.top-bar h1 {
     font-size: 60px;
     text-transform: uppercase;
     font-weight: 700;
-    color: #ffffff;
+    color: #999;
     line-height: 50px;
 }
 
-.top-bar-zoola p {
+.top-bar p {
     font-size: 15px;
     text-transform: uppercase;
     font-weight: 500;
-    color: #ffffff;
-}
-
-.top-bar-zoola p a {
     color: #777;
 }
 
-.top-bar-zoola p a:hover,
-.top-bar-zoola p a:focus {
-    color: #555;
-    text-decoration: none;
-}
-
-.top-bar-fans {
-    color: #333;
-    padding: 150px 0 150px;
-    background: -webkit-linear-gradient( rgba(0, 0, 0, .3), rgba(255, 255, 255, .8)), url(../img/giphy.gif);
-    background: linear-gradient( rgba(0, 0, 0, .3), rgba(255, 255, 255, .8)), url(../img/giphy.gif);
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center center;
-    text-align: center;
-}
-
-
-.top-bar-fans h1 {
-    font-size: 60px;
-    text-transform: uppercase;
-    font-weight: 700;
-    color: #ffffff;
-    line-height: 50px;
-}
-
-.top-bar-fans p {
-    font-size: 15px;
-    text-transform: uppercase;
-    font-weight: 500;
-    color: #ffffff;
-}
-
-.top-bar-fans p a {
+.top-bar p a {
     color: #777;
 }
 
-.top-bar-fans p a:hover,
-.top-bar-fans p a:focus {
+.top-bar p a:hover,
+.top-bar p a:focus {
     color: #555;
     text-decoration: none;
 }
@@ -1090,7 +1044,7 @@ footer img {
 
 .input-contact > span.active,
 .textarea-contact > span.active {
-    color: #ffbf00;
+    color: #778f6f;
     font-size: 10px;
     top: 0px;
     left: 5px;
@@ -1111,7 +1065,7 @@ textarea:focus {
     height: 30px;
     width: 30px;
     display: inline-block;
-    background: #ffbf00;
+    background: #778f6f;
     text-align: center;
     line-height: 33px;
     margin-right: 10px;
@@ -1125,7 +1079,7 @@ textarea:focus {
 }
 
 .btn-box {
-    background: #ffbf00;
+    background: #778f6f;
     padding: 10px 50px;
     border-radius: 0;
     color: #fff;
@@ -1152,7 +1106,7 @@ textarea:focus {
 
 .cat-ul li i {
     margin-right: 10px;
-    color: #ffbf00;
+    color: #778f6f;
 }
 
 
